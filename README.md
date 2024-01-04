@@ -17,9 +17,7 @@ BeCreative is a Python-based quiz that guides users through a series of question
 ## Technologies Used
 
 - **Python:** The core language for quiz logic and backend functionality.
-- **Flask:** A web framework for building the quiz application.
 - **HTML/CSS:** Frontend styling and structure.
-- **Bootstrap:** Enhancing frontend design and responsiveness.
 - **GitHub:** Version control and collaboration.
 - **Heroku:** Platform for deployment.
 
