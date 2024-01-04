@@ -18,7 +18,11 @@ BeCreative is a Python-based quiz that guides users through a series of question
 
 ### Repository
 
-[View BeCreative Repository](#) *(Note: Placeholder link for demonstration)*
+Check out the [BeCreative][becreative-link] repository for creative inspiration.
+
+...
+
+[becreative-link]: https://github.com/abikirkham/BeCreative.git
 
 ## Technologies Used
 
