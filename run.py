@@ -1,7 +1,27 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+
+#creds bit 
+import gspread
+from google.oauth2.service_account import Credentials
+
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+
+    CREDS = Credntials.from_service_account_file('creds.json')
+    SCOPED_CREDS = Creds.with_scopes(SCOPE)
+    GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+    SHEET = GSPREAD_CLIENT.open('be_creative')
+
+choices = SHEET.worksheet('choices')
+
+
 # written on vs - python practised previously - run see if fits with project 
+
 import time
 
 def personality_quiz():
