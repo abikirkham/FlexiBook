@@ -24,7 +24,7 @@ BeCreative is a Python-based quiz that guides users through a series of question
 
 - **Python:** The core language for quiz logic and backend functionality.
 - **HTML/CSS:** Frontend styling and structure.
-- **GitHub:** Version control and collaboration.
+- **GitHub/Gitpod:** Version control and collaboration.
 - **Heroku:** Platform for deployment.
 
 ## User Experience Design (UXD)
