@@ -1,7 +1,14 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from datetime import datetime
 
-def create_google_sheet():
+def determine_creative_outlet(traits):
+    # ... (unchanged)
+
+def display_result(creative_outlet):
+    # ... (unchanged)
+
+def record_responses_to_sheet(traits, creative_outlet):
     # Load credentials
     SCOPE = [
         "https://www.googleapis.com/auth/spreadsheets",
@@ -13,18 +20,15 @@ def create_google_sheet():
     SCOPED_CREDS = CREDS.with_scopes(SCOPE)
     GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 
-    # Create a new spreadsheet
-    new_spreadsheet = GSPREAD_CLIENT.create('be_creative_quiz_responses')
+    # Open the existing spreadsheet
+    SHEET = GSPREAD_CLIENT.open('be_creative_quiz_responses')
+    choices_worksheet = SHEET.worksheet('choices')
 
-    # Add a worksheet named 'choices' with headers
-    choices_worksheet = new_spreadsheet.add_worksheet(title='choices', rows=1, cols=6)
-    headers = ['Timestamp', 'Introvert/Extrovert', 'Analytical/Creative', 'Organized/Free-Spirited', 'Adventurous/Stable', 'Creative Outlet']
-    choices_worksheet.append_row(headers)
+    # Record timestamp and user responses
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    row_data = [timestamp] + list(traits.values()) + [creative_outlet]
+    choices_worksheet.append_row(row_data)
 
-    print("Google Sheet 'be_creative_quiz_responses' created successfully.")
-
-if __name__ == "__main__":
-    create_google_sheet()
 
 # written on vs - python practised previously - run see if fits with project 
 
@@ -109,6 +113,8 @@ def display_result(creative_outlet):
         personality_quiz()
     else:
         print("Thank you for taking the Personality Quiz!")
+ record_responses_to_sheet(traits, creative_outlet)
 
+if __name__ == "__main__":
 # Run the personality quiz
 personality_quiz()
