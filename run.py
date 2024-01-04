@@ -1,24 +1,30 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-
-#creds bit 
 import gspread
 from google.oauth2.service_account import Credentials
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
+def create_google_sheet():
+    # Load credentials
+    SCOPE = [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive.file",
+        "https://www.googleapis.com/auth/drive"
     ]
 
-    CREDS = Credntials.from_service_account_file('creds.json')
-    SCOPED_CREDS = Creds.with_scopes(SCOPE)
+    CREDS = Credentials.from_service_account_file('creds.json')
+    SCOPED_CREDS = CREDS.with_scopes(SCOPE)
     GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-    SHEET = GSPREAD_CLIENT.open('be_creative')
 
-choices = SHEET.worksheet('choices')
+    # Create a new spreadsheet
+    new_spreadsheet = GSPREAD_CLIENT.create('be_creative_quiz_responses')
 
+    # Add a worksheet named 'choices' with headers
+    choices_worksheet = new_spreadsheet.add_worksheet(title='choices', rows=1, cols=6)
+    headers = ['Timestamp', 'Introvert/Extrovert', 'Analytical/Creative', 'Organized/Free-Spirited', 'Adventurous/Stable', 'Creative Outlet']
+    choices_worksheet.append_row(headers)
+
+    print("Google Sheet 'be_creative_quiz_responses' created successfully.")
+
+if __name__ == "__main__":
+    create_google_sheet()
 
 # written on vs - python practised previously - run see if fits with project 
 
