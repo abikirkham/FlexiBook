@@ -45,11 +45,6 @@ The wireframes outline the user journey, starting from the welcome page through 
 - [Quiz Questions](#)
 - [Results Page](#)
 
-### Flowchart
-
-A visual representation of the user flow within the BeCreative application, from the start of the quiz to receiving personalized insights.
-
-[BeCreative Flowchart](#)
 
 ### User Stories
 
