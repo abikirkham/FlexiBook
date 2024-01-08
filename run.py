@@ -109,7 +109,7 @@ def display_result(creative_outlet):
         personality_quiz()
     else:
         print("Thank you for taking the Personality Quiz!")
- record_responses_to_sheet(traits, creative_outlet)
+ 
 
 if __name__ == "__main__":
 # Run the personality quiz
