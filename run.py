@@ -2,11 +2,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
 
-def determine_creative_outlet(traits):
-    # ... (unchanged)
 
-def display_result(creative_outlet):
-    # ... (unchanged)
 
 def record_responses_to_sheet(traits, creative_outlet):
     # Load credentials
