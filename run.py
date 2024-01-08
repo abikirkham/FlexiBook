@@ -2,7 +2,9 @@ import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
 
-
+def determine_creative_outlet(traits):
+    
+def display_result(creative_outlet):
 
 def record_responses_to_sheet(traits, creative_outlet):
     # Load credentials
@@ -114,3 +116,4 @@ def display_result(creative_outlet):
 if __name__ == "__main__":
     # Run the personality quiz
     personality_quiz()
+    record_responses_to_sheet(traits, creative_outlet)
