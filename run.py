@@ -112,5 +112,5 @@ def display_result(creative_outlet):
  
 
 if __name__ == "__main__":
-# Run the personality quiz
-personality_quiz()
+    # Run the personality quiz
+    personality_quiz()
