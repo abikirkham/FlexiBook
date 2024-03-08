@@ -1,5 +1,5 @@
 
-# Portfolio Project 3 - BeCreative: Discover Your Pythonic Creative Peak
+# Portfolio Project 3 - BeCreative: Discover your ideal Creative Outlet based off your lifestyle 
 
 ## BeCreative Quiz
 
