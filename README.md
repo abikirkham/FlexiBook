@@ -1,50 +1,25 @@
 
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 # Portfolio Project 3 - BeCreative: Discover Your Pythonic Creative Peak
 
-Unlock the power of your creative mind with BeCreative, a Python-led quiz designed to help you identify the optimal moments for your creative insights. This project is rooted in the belief that understanding your creative rhythms can contribute to mental well-being.
+## BeCreative Quiz
 
-## Overview
-
-BeCreative is a Python-based quiz that guides users through a series of questions to determine the ideal circumstances for their creative thinking. By analyzing the responses, the application provides personalized insights and tips tailored to each user's creative profile. Additionally, users have the option to retake the quiz for a fresh perspective.
+### My Vision
+Welcome to the BeCreative Quiz, a Python-based quiz deployed on Heroku for easy access and enjoyment! Designed to provide you with a creative outlet based on your answers to a series of lifestyle questions, BeCreative aims to unlock the power of your creative mind. This project is rooted in the belief that understanding your creative rhythms can contribute to mental well-being, helping you identify the optimal moments for your creative insights.
 
 ## Requirements 
 "The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line."
 
-### Live Site
+**Live Site:**
+[Include link here]
 
-[Explore BeCreative](#) *(Note: Placeholder link for demonstration)*
-
-### Repository
-
-Check out the [BeCreative][becreative-link] repository for creative inspiration.
-
-...
-
-[becreative-link]: https://github.com/abikirkham/BeCreative.git
+**Repository:**
+[Include link here]
 
 ## Technologies Used
-
 - **Python:** The core language for quiz logic and backend functionality.
 - **HTML/CSS:** Frontend styling and structure.
 - **GitHub/Gitpod:** Version control and collaboration.
 - **Heroku:** Platform for deployment.
-
-## User Experience Design (UXD)
-
-### Storytelling
-
-Meet Abi, a busy professional juggling work and personal commitments. With a passion for creativity, Abi often finds it challenging to identify the best moments for diving into creative pursuits. BeCreative comes to the rescue, offering a personalized approach to understanding when the creative spark is most likely to ignite.
-
-### Wireframe
-
-The wireframes outline the user journey, starting from the welcome page through to the personalized results.
-
-- [Welcome Page](#)
-- [Quiz Questions](#)
-- [Results Page](#)
-
 
 ### User Stories
 
@@ -63,74 +38,44 @@ The wireframes outline the user journey, starting from the welcome page through 
 5. **As a user, I can access the statistics of the answers for data analysis.**
    - Users can explore aggregated statistics of quiz responses, providing insights into overall trends, popular creative moments, and common preferences. This fosters a sense of community and transparency in recommendations.
 
+### Features
 
-## The Surface Plane
+**Favicon:**
+Include image
 
+**Home Page:**
+Include all features and steps of the quiz
 
-### Homepage
+**Wireframes:**
+Include all features and images
 
-- Engaging hero section highlighting the benefits of using BeCreative.
-- Clear call-to-action buttons encouraging users to take the quiz or learn more.
-- Display of key advantages and a sneak peek of the quiz interface.
+### Testing
 
-- [Hero Section](#)
-- [Key Advantages](#)
-- [Sneak Peek](#)
+### Deployment
 
-### Quiz
+#### Github/Heroku
 
-The quiz section is designed to guide users through a step-by-step process of answering questions.
+**Pushing Changes:**
+- `git add`: This command was used to add the file(s) to the staging area before they are committed.
+- `git commit -m "commit message"`: This command was used to commit changes to the local repository queue ready for the final step.
+- `git push`: This command was used to push all committed code to the remote repository on GitHub.
 
-- [Quiz Interface](#)
-- [Question Example](#)
-- [Submit Button](#)
+#### Deploying a GitHub Repository via GitHub Pages
 
-### Results
+1. In your Repository section, select the Repository you wish to deploy.
+2. In the top horizontal Menu, locate and click the Settings link.
+3. Inside the Setting page, around halfway down locate the GitHub Pages Section.
+4. Under Source, select the None tab and change it to Main and click Save.
+5. Finally, once the page resets, scroll back down to the GitHub Pages Section to see the following message: "Your site is ready to be published at (Link to the GitHub Page Web Address)". It can take time for the link to open your project initially, so please don't be worried if it does not load immediately.
 
-Upon completing the quiz, users are presented with personalized insights and tips.
+#### Making a Local Clone
 
-- [Results Display](#)
-- [Quote for Reflection](#)
-- [Retake Option](#)
-
-## Deployment
-
-BeCreative is deployed using Heroku, ensuring accessibility for users.
-
-- [Heroku Deployment](#)
-
-## Credits
-
-### Code
-
-- Code Institute and various online resources provided foundational knowledge for this project.
-- Mentoring and assistance from peers contributed to problem-solving.
-
-###
-- chatgpt - used to teach me on errors in my code and how to slove them.
-
-### Issues with Code
-
-- 
-
-### Acknowledgements
-
-- BeCreative was developed as Portfolio Project 3 for the Fullstack Diploma at Code Institute.
-- Gratitude to friends and mentors for insights into creative expression and well-being.
-
-This project is dedicated to promoting mental well-being through self-expression, embracing creativity, and understanding one's unique creative rhythms.
-
-Keep creating, keep thriving!
-
-Abi Kirkham, 2024
-
-
-
-
-
-add more on testing and screen shots and how this will beenfit users 
-
-
+1. Find the GitHub Repository.
+2. Click the Code button.
+3. Copy the link shown.
+4. In Gitpod, change the directory to the location you would like the cloned directory to be located.
+5. Type `git clone`, and paste the link you copied in step 3.
+6. Press Enter to have the local clone created.
 
 
 ## Creating the Heroku app
@@ -142,7 +87,11 @@ When you create the app, you will need to add two buildpacks from the _Settings_
 
 You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### Credits
 
+**Coding Instructions:**
+- [Include sources and credits for coding instructions]
+
+**Media:**
+- [Include sources and credits for media used]
