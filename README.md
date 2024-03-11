@@ -1,10 +1,10 @@
 
-# Portfolio Project 3 - BeCreative: Discover your ideal Creative Outlet based off your lifestyle 
+# Portfolio Project 3 - FlexiBook - Optimise offerings with real-time class booking analytics."
 
 ## BeCreative Quiz
 
 ### My Vision
-Welcome to the BeCreative Quiz, a Python-based quiz deployed on Heroku for easy access and enjoyment! Designed to provide you with a creative outlet based on your answers to a series of lifestyle questions, BeCreative aims to unlock the power of your creative mind. This project is rooted in the belief that understanding your creative rhythms can contribute to mental well-being, helping you identify the optimal moments for your creative insights.
+This project is a simple web application built with Python. It enables users to book yoga classes and provides analytics on the popularity of each class. The analytics are based on the number of bookings for each class, assisting the team in identifying which classes are more popular and which offers they can promote more effectively. This project is hosted on GitHub for version control and collaboration, and it can be deployed to Heroku, a cloud platform as a service (PaaS), for easy management and scalability.
 
 ## Requirements 
 "The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line."
@@ -23,21 +23,30 @@ Welcome to the BeCreative Quiz, a Python-based quiz deployed on Heroku for easy 
 
 ### User Stories
 
-1. **As a user, I can take a quiz to discover the optimal moments for my creative thinking.**
-   - Users interact with a well-designed and user-friendly quiz covering time preferences, environmental conditions, and habits influencing creativity.
+### User Booking Yoga Class
+As a user, I want to book a yoga class for next week so that I can ensure I secure a spot in my preferred class.
 
-2. **As a user, I can receive personalized insights and tips based on my quiz responses.**
-   - Upon quiz completion, users receive a detailed analysis highlighting optimal creative moments and personalized recommendations for enhancing creativity.
+### Instructor Class Management
+As an instructor, I want to have access to a website where I can manage my yoga classes, view the number of bookings for each class, and track their popularity over time.
 
-3. **As a user, I can retake the quiz for a new perspective on my creative rhythms.**
-   - Users have the flexibility to retake the quiz at any time, ensuring insights and tips align with their current preferences and routines.
+### Analytics for Class Booking Trends
+As an instructor, I want to see analytics on the booking trends for my classes so that I can understand which classes are more popular among students and adjust my schedule or teaching style accordingly.
 
-4. **As a user, I can easily navigate through the quiz and view my results.**
-   - The quiz interface is intuitive, allowing seamless navigation through questions. Results are presented clearly and visually for easy consumption.
+### Schedule and Details Update
+As an instructor, I want to easily update the schedule or details of my yoga classes on the website to ensure accuracy and keep students informed about any changes.
 
-5. **As a user, I can access the statistics of the answers for data analysis.**
-   - Users can explore aggregated statistics of quiz responses, providing insights into overall trends, popular creative moments, and common preferences. This fosters a sense of community and transparency in recommendations.
+### Insights into Student Demographics
+As an instructor, I want to have access to a dashboard where I can view insights into student demographics, preferences, and attendance patterns to tailor my classes to better meet their needs.
 
+### Marketing Opportunities Identification
+As an instructor, I want to use the booking analytics provided by the website to identify opportunities for marketing promotions or special events that can attract more students to my classes.
+
+### Performance Tracking
+As an instructor, I want to track the overall performance and success of my classes based on metrics such as booking rates, attendance rates, and student feedback.
+
+### User-Friendly Interface
+As an instructor, I want to have a user-friendly interface on the website that allows me to easily navigate and access the information I need to manage my classes effectively.
+   
 ### Features
 
 **Favicon:**
@@ -51,6 +60,7 @@ Include all features and images
 
 ### Testing
 ## PEP8 TESTING
+
 ### Deployment
 
 #### Github/Heroku
