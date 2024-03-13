@@ -11,7 +11,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('FlexiBook')
 
-schedule = SHEET.worksheet('schedule')
+schedule = SHEET.worksheet('schedule')  
 
 data = schedule.get_all_values()
 
