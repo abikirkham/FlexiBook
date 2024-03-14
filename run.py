@@ -12,15 +12,13 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('FlexiBook')
 
 schedule = SHEET.worksheet('schedule')  
+CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
 
 data = schedule.get_all_values()
 
 print(data)
 
 def program_start():
-    """
-    Displays the programs name and disclaimer 
-    """
     program_logo()
     print("FʟᴇxɪBᴏᴏᴋ")
     typing_print("In this application, you will be able to book "
@@ -54,15 +52,23 @@ if menu_entry_index == '[b]':
         edit_booking()
     elif menu_entry_index == '[c]':
         cancel_booking()
+    elif menu_entry_index == '[v]':
+        view_booking()
     else:
         print("Invalid option selected!")
 
-def book_class():
 
+
+def book_class():
+    days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    times = ['8:30am', '12:00pm', '13:30pm', '15:00pm', '17:45pm']
+     
+    
 def edit_booking():
 
 def cancel_booking():
 
+def view_booking():
 
 if __name__ == "__main__":
     main()
