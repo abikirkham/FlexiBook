@@ -47,6 +47,15 @@ def main():
     terminal_menu = TerminalMenu(options, title="Select your action")
     menu_entry_index = terminal_menu.show()
     print(f"You have selected {options[menu_entry_index]}!")
+    
+if menu_entry_index == '[b]':
+        book_class()
+    elif menu_entry_index == '[e]':
+        edit_booking()
+    elif menu_entry_index == '[c]':
+        cancel_booking()
+    else:
+        print("Invalid option selected!")
 
 if __name__ == "__main__":
     main()
