@@ -47,7 +47,7 @@ def main():
     terminal_menu = TerminalMenu(options, title="Select your action")
     menu_entry_index = terminal_menu.show()
     print(f"You have selected {options[menu_entry_index]}!")
-    
+
 if menu_entry_index == '[b]':
         book_class()
     elif menu_entry_index == '[e]':
@@ -56,6 +56,13 @@ if menu_entry_index == '[b]':
         cancel_booking()
     else:
         print("Invalid option selected!")
+
+def book_class():
+
+def edit_booking():
+
+def cancel_booking():
+
 
 if __name__ == "__main__":
     main()
