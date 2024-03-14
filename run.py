@@ -22,19 +22,13 @@ def program_start():
     Displays the programs name and disclaimer 
     """
     program_logo()
+    print("FʟᴇxɪBᴏᴏᴋ")
     typing_print("In this application, you will be able to book "
                  "your favourite yoga class at the date and time "
                  "most suited to you schedule.")
     disclaimer()
 
     def disclaimer():
-        """
-        Prints a disclaimer that informs the user about the storae of the input and provoded the possibility to end te application by asking to continue.
-        
-
-        Raises:
-            ValueError, if the answer to continue wasn't given, is a number, or is not y, yes, n or no
-        """
         print("DISCLAIMER: ")
         print("The data entered is stored in a Google Worksheet for the duration"
           " of use. Once\nall the data has been completed and a topic has been"
@@ -49,8 +43,8 @@ def program_start():
 from simple_term_menu import TerminalMenu
 
 def main():
-    options = ["Book a class", "Edit your booking", "Cancel your booking"]
-    terminal_menu = TerminalMenu(options)
+    options = ["[b] Book a class", "[e] Edit your booking", "[c] Cancel your booking"]
+    terminal_menu = TerminalMenu(options, title="Select your action")
     menu_entry_index = terminal_menu.show()
     print(f"You have selected {options[menu_entry_index]}!")
 
