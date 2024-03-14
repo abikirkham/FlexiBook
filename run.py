@@ -44,15 +44,15 @@ def program_start():
           " been displayed to guarantee that your data has been \ndeleted"
           " correctly."
           )
-    while True:
-        continue_answer = (
-            input(
-                "Do you want to continue? (y for yes / n for no)"
-                "\n"
-            )
-            """
-            converts the user's input to lowercase and removes any leading or trailing whitespace. This ensures that the user's input is not case-sensitive and is consistent.
-            """
-            .lower()
-            .strip()
-        )
+   
+
+from simple_term_menu import TerminalMenu
+
+def main():
+    options = ["Book a class", "Edit your booking", "Cancel your booking"]
+    terminal_menu = TerminalMenu(options)
+    menu_entry_index = terminal_menu.show()
+    print(f"You have selected {options[menu_entry_index]}!")
+
+if __name__ == "__main__":
+    main()
