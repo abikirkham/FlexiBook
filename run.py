@@ -92,9 +92,15 @@ book_class()
 
 def edit_booking():
 
+    code = input("Please type you class confirmation code: ")
+
 def cancel_booking():
 
+    code = input("Please type you class confirmation code: ")
+
 def view_booking():
+
+    code = input("Please type you class confirmation code: ")
 
 if __name__ == "__main__":
     main()
