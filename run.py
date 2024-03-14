@@ -18,6 +18,9 @@ data = schedule.get_all_values()
 
 print(data)
 
+def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
+    CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
+
 def program_start():
     program_logo()
     print("FʟᴇxɪBᴏᴏᴋ")
@@ -62,8 +65,31 @@ if menu_entry_index == '[b]':
 def book_class():
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     times = ['8:30am', '12:00pm', '13:30pm', '15:00pm', '17:45pm']
-     
     
+    day = input("Please chose a day of the week:")
+
+    if day.lower() in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
+        chosen_time = input("Choose a time: ")
+        if chosen_time.lower() in ['8:30am', '12:00pm', '13:30pm', '15:00pm', '17:45pm']:
+            name = input("Please enter your name:")
+            print(f"Booking confirmed for {day} at {chosen_time} for {name}.")
+            confirmation = input("Please confirm this is correct (yes/no): ")
+            if confirmation.lower() == 'yes':
+
+                confirmation_code = ''.join(random.choices('0123456789', k=6))
+                print(f"Your booking is confirmed. Confirmation code: {confirmation_code}")
+
+write_to_confirmation_sheet(confirmation_code, day, chosen_time, name)
+
+            else:
+                print("Booking cancelled. Please start again.")
+        else:
+            print("Invalid time. Please try again.")
+    else:
+        print("Invalid day. Please try again.")
+
+book_class()
+
 def edit_booking():
 
 def cancel_booking():
