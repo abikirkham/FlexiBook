@@ -54,10 +54,15 @@ As an instructor, I want to have a user-friendly interface on the website that a
 ## Design
 
 ### Imagery - the logo images and where i got this 
-### the color scheme??? add this 
-### flow chart - add image and where i got from
+### the color scheme??? add this for each color i use
+### Flow Chart
+The flowchary was crafted when I was decisiding how I would structure and display my idea, this was created with [Miro](https://miro.com/app/board/uXjVNhD3dEI=/). This displays the option of the class booking sytem where the user will input their actions and generate a confirmation code once booked a class. The other options are for editting and cancelling the booked classes.
+<details>
+  <summary>Click to see my flowchart.</summary>
+  put flowchart img here
+</details>
 
-## Requirements 
+### Requirements 
 "The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line."
 
 ## Features
