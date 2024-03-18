@@ -5,23 +5,24 @@
 
 ### My Vision
 This project is a simple web application built with Python. It enables users to book yoga classes and provides analytics on the popularity of each class. The analytics are based on the number of bookings for each class, assisting the team in identifying which classes are more popular and which offers they can promote more effectively. This project is hosted on GitHub for version control and collaboration, and it can be deployed to Heroku, a cloud platform as a service (PaaS), for easy management and scalability.
-
-## Requirements 
-"The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line."
-
 **Live Site:**
 [Include link here]
 
 **Repository:**
 [Include link here]
 
-## Technologies Used
-- **Python:** The core language for quiz logic and backend functionality.
-- **HTML/CSS:** Frontend styling and structure.
-- **GitHub/Gitpod:** Version control and collaboration.
-- **Heroku:** Platform for deployment.
+# Table of Contents
 
-### User Stories
+- [User Exerience](#user_experience)
+- [Design](#design)
+- [Features](#features)
+- [Technologies Used](#technologies_used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
+
+### User Experience 
 
 ### User Booking Yoga Class
 As a user, I want to book a yoga class for next week so that I can ensure I secure a spot in my preferred class.
@@ -46,20 +47,39 @@ As an instructor, I want to track the overall performance and success of my clas
 
 ### User-Friendly Interface
 As an instructor, I want to have a user-friendly interface on the website that allows me to easily navigate and access the information I need to manage my classes effectively.
-   
-### Features
 
-**Favicon:**
-Include image
 
-**Home Page:**
-Include all features and steps of the quiz
 
-**Wireframes:**
-Include all features and images
+## Design
+
+### Imagery - the logo images and where i got this 
+### the color scheme??? add this 
+### flow chart - add image and where i got from
+
+## Requirements 
+"The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line."
+
+## Features
+
+- logo
+- disclaimer
+- google spread sheet
+- input validation
+- display of entered data
+- program ending???
+
+
+## Technologies Used
+- **Python:** The core language for quiz logic and backend functionality.
+- **HTML/CSS:** Frontend styling and structure.
+- **GitHub/Gitpod:** Version control and collaboration.
+- **Heroku:** Platform for deployment.
+
 
 ### Testing
 ## PEP8 TESTING
+
+and lighthouse 
 
 ### Deployment
 
