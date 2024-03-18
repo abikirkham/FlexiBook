@@ -78,10 +78,25 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 
 
 ## Technologies Used
-- **Python:** The core language for quiz logic and backend functionality.
-- **HTML/CSS:** Frontend styling and structure.
-- **GitHub/Gitpod:** Version control and collaboration.
-- **Heroku:** Platform for deployment.
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) [/CSS](https://en.wikipedia.org/wiki/CSS)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [Git](https://git-scm.com/) (Version Control)
+- [GitHub](https://github.com/) (File Storage)
+- [Heroku](https://www.heroku.com/) (Deployment)
+- [GitPod](https://www.gitpod.io) (IDE)
+- [Miro](https://miro.com/app/board/uXjVNhD3dEI=/) (Flowchart Creation)
+- [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Small%20Keyboard&t=Type%20Something%20) (Logo Creation)
+- [Google Spreadsheet](https://docs.google.com/spreadsheets/u/0/?pli=1) (Worksheet Creation)
+- [Browserling](https://www.browserling.com/) (Cross-browser Testing)
+
+## Libraries and Modules
+
+- [`google.oauth2.service_account`](https://google-auth.readthedocs.io/en/master/reference/google.oauth2.service_account.html) (Google Authentication)
+- [`gspread`](https://docs.gspread.org/en/v5.10.0/) (Google Sheets Functionality)
+- [`colorama`](https://pypi.org/project/colorama/) (Text Coloring in Terminal)
+- [`simple_menu`](https://pypi.org/project/simple-term-menu/) (Menu Functionality)
+
 
 
 ### Testing
