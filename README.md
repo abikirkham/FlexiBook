@@ -54,7 +54,9 @@ As an instructor, I want to have a user-friendly interface on the website that a
 ## Design
 
 ### Imagery - the logo images and where i got this 
+
 ### the color scheme??? add this for each color i use
+
 ### Flow Chart
 The flowchary was crafted when I was decisiding how I would structure and display my idea, this was created with [Miro](https://miro.com/app/board/uXjVNhD3dEI=/). This displays the option of the class booking sytem where the user will input their actions and generate a confirmation code once booked a class. The other options are for editting and cancelling the booked classes.
 <details>
@@ -198,15 +200,6 @@ and lighthouse
 
 **Note:** Ensure the JSON file is never committed to GitHub as it contains sensitive information. Create a .gitignore file in the workspace and add the name of the JSON file to it.
 
-
-### Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
 
 ## Credits
