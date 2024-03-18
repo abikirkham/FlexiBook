@@ -61,7 +61,7 @@ As an instructor, I want to have a user-friendly interface on the website that a
 The flowchary was crafted when I was decisiding how I would structure and display my idea, this was created with [Miro](https://miro.com/app/board/uXjVNhD3dEI=/). This displays the option of the class booking sytem where the user will input their actions and generate a confirmation code once booked a class. The other options are for editting and cancelling the booked classes.
 <details>
   <summary>Click to see my flowchart.</summary>
-  <img src="readme/flowchart.png" width="400">
+  <img src="readme/flowchart.png" width="700">
 </details>
 
 ### Requirements 
