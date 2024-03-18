@@ -2,6 +2,7 @@ import gspread
 import random
 from google.oauth2.service_account import Credentials
 from simple_term_menu import TerminalMenu
+import colorama from colorama import Fore, Back, Style
 
 
 SCOPE = [
@@ -41,9 +42,9 @@ def book_class():
             else:
                 print("Booking cancelled. Please start again.")
         else:
-            print("Invalid time. Please try again.")
+            print(Fore.RED + "Invalid time. Please try again.")
     else:
-        print("Invalid day. Please try again.")
+        print(Fore.RED + "Invalid day. Please try again.")
     input("Press Enter to return to the main menu.")
 
 
@@ -59,7 +60,7 @@ def edit_booking():
         elif choice == '2':
             book_class()
         else:
-            print("Invalid choice. Please enter either 1 or 2.")
+            print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
             edit_booking()
     else:
         print("Invalid confirmation code. Please try again.")
@@ -74,17 +75,18 @@ def cancel_booking():
         if choice.lower() == 'yes':
             print("Booking cancelled.")
         elif choice.lower() == 'no':
-            print("You remain on our class booking system.")
+            print(Fore.RED + "You remain on our class booking system.")
         else:
-            print("Invalid choice. Please enter either 'yes' or 'no'.")
+            print(Fore.RED + "Invalid choice. Please enter either 'yes' or 'no'.")
     else:
-        print("Invalid confirmation code. Please try again.")
+        print(Fore.RED + "Invalid confirmation code. Please try again.")
     input("Press Enter to return to the main menu.\n")
 
 
 def main():
-    print("FʟᴇxɪBᴏᴏᴋ")
-    print("In this application, you will be able to book your favourite yoga class at the date and time most suited to you schedule.")
+    print(Fore.GREEN + "FʟᴇxɪBᴏᴏᴋ")
+    print("In this application, you will be able to book your favourite "
+          "yoga class at the date and time most suited to you schedule.")
     print("DISCLAIMER: ")
     print("The data entered is stored in a Google Worksheet for the duration"
           " of use. Once\nall the data has been completed and a topic has been"
@@ -98,7 +100,7 @@ def main():
     options = ["[b] Book a class", "[e] Edit your booking", "[c] Cancel your booking"]
     terminal_menu = TerminalMenu(options, title="Select your action")
     menu_entry_index = terminal_menu.show()
-    print(f"You have selected {options[menu_entry_index]}!")
+    print(Fore.MAGENTA + f"You have selected {options[menu_entry_index]}!")
 
     if menu_entry_index == '[b]':
         book_class()
@@ -107,9 +109,8 @@ def main():
     elif menu_entry_index == '[c]':
         cancel_booking()
     else:
-        print("Invalid option selected!")
+        print(Fore.RED + "Invalid option selected!")
 
 
 if __name__ == "__main__":
     main()
-    
