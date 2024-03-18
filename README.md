@@ -81,7 +81,35 @@ As an instructor, I want to have a user-friendly interface on the website that a
 
 and lighthouse 
 
-### Deployment
+
+### Manual Testing 
+
+| Test | Test Description | Expected Outcome | Result |
+|------|------------------|------------------|--------|
+| Input of day - Monday | .... | To go to next selection of time. | result |
+| Input of day - Tuesday | ..... | To go to next selection of time. | result |
+| Input of day - Wednesday | ..... | To go to next selection of time. | result |
+| Input of day - Thursday | ..... | To go to next selection of time. | result |
+| Input of day - Friday | ..... | To go to next selection of time. | result |
+| Input of day - Saturday | ..... | To go to next selection of time. | result |
+| Input of day - Sunday | ..... | To go to next selection of time. | result |
+| Input of day - Error | ..... | Will ask to input again. | result |
+| Input of time - 8:30AM | ..... | To go to next selection of Name. | result |
+| Input of time - 12:00PM | ..... | To go to next selection of Name. | result |
+| Input of time - 13:30PM | ..... | To go to next selection of Name. | result |
+| Input of time - 15:00PM | ..... | To go to next selection of Name. | result | 
+| Input of time - 17:45PM | ..... | To go to next selection of Name. | result |
+| Input of time - Error | ..... | Will ask to input again. | result |
+| Input of name - yes | ..... | To go to next selection of confirmation. | result |
+| Input of name - no | ..... | To go to next selection of confirmation. | result |
+| Input of confirmation code | ..... | To go to next selection action. | result |
+| Input of confirmation code - Error | ..... | Will ask to input again. | result |
+| Input of choice - 1/2 | ..... | To go to selected option. | result |
+| Input of enter - return to menu | ..... | To go to main menu. | result |
+
+
+
+## Deployment
 
 #### Github/Heroku
 
