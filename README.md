@@ -245,7 +245,8 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ### Media
 
 - To install [Colorama](https://pypi.org/project/colorama/) , I found this website very useful for the easiest ways to install.
-- For style examples to go with my Colorama installation, I found this blog by [Amy Richardson](https://www.codu.co/articles/adding-colour-to-python-code-lbai_0u7). 
+- For style examples to go with my Colorama installation, I found this blog by [Amy Richardson](https://www.codu.co/articles/adding-colour-to-python-code-lbai_0u7).
+- For the icon on the page to make more personalised, I used the installation of [Favicon](https://favicon.io)
 
 ### ReadMe 
 
