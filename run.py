@@ -1,6 +1,6 @@
 import gspread
 import random
-from google.oauth2.service_account import Credentials 
+from google.oauth2.service_account import Credentials
 from simple_term_menu import TerminalMenu
 
 
@@ -25,15 +25,15 @@ def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
 def book_class():
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     times = ['8:30am', '12:00pm', '13:30pm', '15:00pm', '17:45pm']
-    
-    day = input("Please chose a day of the week:")
+
+    day = input("Please chose a day of the week:\n")
 
     if day.lower() in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
-        chosen_time = input("Choose a time: ")
+        chosen_time = input("Choose a time:\n")
         if chosen_time.lower() in ['8:30am', '12:00pm', '13:30pm', '15:00pm', '17:45pm']:
-            name = input("Please enter your name:")
+            name = input("Please enter your name:\n")
             print(f"Booking confirmed for {day} at {chosen_time} for {name}.")
-            confirmation = input("Please confirm this is correct (yes/no): ")
+            confirmation = input("Please confirm this is correct (yes/no):\n")
             if confirmation.lower() == 'yes':
                 confirmation_code = ''.join(random.choices('0123456789', k=6))
                 print(f"Your booking is confirmed. Confirmation code: {confirmation_code}")
@@ -48,12 +48,12 @@ def book_class():
 
 
 def edit_booking():
-    confirmation_code = input("Please type your class confirmation code: ")
+    confirmation_code = input("Please type your class confirmation code:\n")
     if confirmation_code in CONFIRMATION_SHEET:
         print("Booking found. What would you like to edit?")
         print("1. Change date")
         print("2. Change time")
-        choice = input("Enter your choice (1/2): ")
+        choice = input("Enter your choice (1/2):\n")
         if choice == '1':
             book_class()
         elif choice == '2':
@@ -63,17 +63,15 @@ def edit_booking():
             edit_booking()
     else:
         print("Invalid confirmation code. Please try again.")
-    input("Press Enter to return to the main menu.")
+    input("Press Enter to return to the main menu.\n")
 
 
 def cancel_booking():
-    confirmation_code = input("Please type your class confirmation code: ")
+    confirmation_code = input("Please type your class confirmation code:\n")
     if confirmation_code in CONFIRMATION_SHEET:
         print("Booking found. Are you sure you want to cancel?")
-        choice = input("Enter 'yes' to confirm cancellation, or 'no' to keep the booking: ")
+        choice = input("Enter 'yes' to confirm cancellation, or 'no' to keep the booking:\n")
         if choice.lower() == 'yes':
-            # Assuming 'booking_info' is your dictionary, uncomment and adjust the line below
-            # del booking_info[confirmation_code]
             print("Booking cancelled.")
         elif choice.lower() == 'no':
             print("You remain on our class booking system.")
@@ -81,7 +79,7 @@ def cancel_booking():
             print("Invalid choice. Please enter either 'yes' or 'no'.")
     else:
         print("Invalid confirmation code. Please try again.")
-    input("Press Enter to return to the main menu.")
+    input("Press Enter to return to the main menu.\n")
 
 
 def main():
@@ -114,3 +112,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
