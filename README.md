@@ -22,31 +22,30 @@ This project is a simple web application built with Python. It enables users to 
 - [Credits](#credits)
 
 
-## User Experience 
+## User Stories
 
-### User Booking Yoga Class
-As a user, I want to book a yoga class for next week so that I can ensure I secure a spot in my preferred class.
+### For the Owner:
+1. **Viewing Available Classes:** As the owner, I want users to easily view available classes, so they can make informed booking decisions.
 
-### Instructor Class Management
-As an instructor, I want to have access to a website where I can manage my yoga classes, view the number of bookings for each class, and track their popularity over time.
+2. **Integration with Google Sheets:** As the owner, I want to integrate Google Sheets for streamlined management of class schedules, confirmation of each booking and organisation.
 
-### Analytics for Class Booking Trends
-As an instructor, I want to see analytics on the booking trends for my classes so that I can understand which classes are more popular among students and adjust my schedule or teaching style accordingly.
+3. **Analytics Tracking:** As the owner, I want to track user engagement and preferences through analytics, enabling me to tailor classes and improve overall user experience.
 
-### Schedule and Details Update
-As an instructor, I want to easily update the schedule or details of my yoga classes on the website to ensure accuracy and keep students informed about any changes.
+4. **Simplified Administrative Tasks:** As the owner, I want administrative tasks such as adding new classes or managing instructor schedules to be simplified and efficient, allowing me to focus more on providing quality services to users.
 
-### Insights into Student Demographics
-As an instructor, I want to have access to a dashboard where I can view insights into student demographics, preferences, and attendance patterns to tailor my classes to better meet their needs.
+5. **Seamless Integration with Existing Systems:** As the owner, I want the booking system to seamlessly integrate with other existing systems or tools we use for business operations, reducing the need for manual data entry and ensuring consistency across platforms.
 
-### Marketing Opportunities Identification
-As an instructor, I want to use the booking analytics provided by the website to identify opportunities for marketing promotions or special events that can attract more students to my classes.
+### For the User:
+1. **Finding Available Classes:** As a user, I want to easily find available classes based on my preferred time slots and yoga styles, so I can plan my schedule effectively.
 
-### Performance Tracking
-As an instructor, I want to track the overall performance and success of my classes based on metrics such as booking rates, attendance rates, and student feedback.
+2. **Seamless Booking Experience:** As a user, I want to have a seamless booking experience, with clear instructions and intuitive interface, making it convenient to reserve my spot in desired classes.
 
-### User-Friendly Interface
-As an instructor, I want to have a user-friendly interface on the website that allows me to easily navigate and access the information I need to manage my classes effectively.
+3. **Detailed Class Information:** As a user, I want to see detailed information about each class, the date, time, and confirmation code, to help me make informed decisions.
+  
+4. **Easy Editing/Cancellation:** As a user, I want the ability to effortlessly edit or cancel my class bookings, ensuring flexibility in managing my schedule without encountering unnecessary obstacles.
+
+5. **Distraction-Free Experience:** As a user, I want the booking platform to provide a distraction-free experience, with minimal ads or irrelevant content, allowing me to focus solely on finding and booking the classes that align with my needs and preferences.
+
 
 
 
