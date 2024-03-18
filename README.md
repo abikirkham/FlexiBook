@@ -107,8 +107,65 @@ and lighthouse
 5. Type `git clone`, and paste the link you copied in step 3.
 6. Press Enter to have the local clone created.
 
+## Creating a Google Spreadsheet and Integrating it using API
 
-## Creating the Heroku app
+### Creating the Google Spreadsheet:
+
+1. **Log in** (or sign up) to your Google Account.
+2. **Access Google Spreadsheet:** Navigate to Google Sheets.
+3. **Create a new spreadsheet** and give it a descriptive name, e.g., 'life-in-numbers' like the name of the application.
+4. **Rename the worksheet** (e.g., 'user') and add, if necessary, additional worksheets.
+5. **Add headings** (Name, Birth year, Gender (m/f), Height in m, Weight in kg, Age).
+
+### Setting up the APIs:
+
+1. **Navigate to the Google Cloud Platform:**
+   - Create a new project by clicking the button "Select a project" and then selecting "New project."
+   - Give the project a descriptive and meaningful name, e.g., life-in-numbers, and click on the "CREATE" button.
+   - In the Notifications pop-up, click on "SELECT PROJECT."
+   
+2. **On the project page:**
+   - Go to the menu (click the burger icon in the top-left corner of the page), click on "APIs and services," and then select "Library."
+   - In the search bar, search for "Google Drive" and enable it.
+   - Click on "Credentials" in the sidebar and then select "+ CREATE CREDENTIALS > Help me choose."
+   
+3. **Credential setup:**
+   - Select "Google Drive API" and "Application Data" in the Credential Type section and click on the "NEXT" button.
+   - Enter a custom service name and click the "CREATE AND CONTINUE" button.
+   - Select "Editor" as the role in the Quick access section Basic and press the "CONTINUE" button.
+   - Leave the form fields in the next question blank and click on "DONE."
+   - Click on the email from the newly created Service Account.
+   - Click on the Tab "KEYS" and then select "Create new key" from the dropdown menu of the "ADD KEY" button.
+   - Keep the key type as JSON and click the "CREATE" button. Download the JSON file to your local machine.
+
+4. **Enable Google Sheets API:**
+   - Go back to the library again, search for "Google Sheets API," and enable it.
+
+5. **Drag and drop credential-json file:**
+   - Drag and drop the credential JSON file (downloaded after step 3) into the workspace and rename it as "creds.json" for simplicity.
+
+6. **Sharing the Spreadsheet:**
+   - Open the JSON file in the workspace, copy the client email (without the quotes).
+   - Go to the created Google Spreadsheet, click the "Share" button.
+   - Paste in the email address (from step 6), select "Editor," and then click "Share."
+
+### Connecting the APIs to Python:
+
+1. **Install dependencies:**
+   - In the workspace terminal, run the command 'pip3 install gspread google-auth'.
+   
+2. **Import libraries:**
+   - Import the gspread library at the top of the Python file in the workspace.
+   - Import the Credentials from the Google Auth Account (google.oauth2.service_account).
+   
+3. **Set SCOPE and create CREDS:**
+   - Set the SCOPE, listing the APIs the program needs to access to run.
+   - Create CREDS using the gspread authorize method to access the created worksheet data.
+
+**Note:** Ensure the JSON file is never committed to GitHub as it contains sensitive information. Create a .gitignore file in the workspace and add the name of the JSON file to it.
+
+
+### Creating the Heroku app
 
 When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
@@ -118,10 +175,29 @@ When you create the app, you will need to add two buildpacks from the _Settings_
 You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
 
-### Credits
+## Credits
 
-**Coding Instructions:**
-- [Include sources and credits for coding instructions]
+### Content 
+- The idea originated from my first project with Code Institute, fueled by my passion for yoga and aspirations for future progression—a booking system for yoga classes.
 
-**Media:**
-- [Include sources and credits for media used]
+### Code
+
+- Leveraged the walkthrough project "Love Sandwich" from Code Institute to utilize the gspread library, set APIs, update worksheets, and fetch data.
+- ASCII text art logo sourced from [fsymbols.com](https://fsymbols.com/text-art/)
+- Menu implementation guidance provided by tutor, sourced from [simple-term-menu](https://pypi.org/project/simple-term-menu/)
+- Utilized a random code generator from [Stack Overflow](https://stackoverflow.com/questions/2257441/random-string-generation-with-upper-case-letters-and-digits) 
+- Referenced various online resources including:
+  - Google
+  - W3C
+  - W3schools
+  - Stack Overflow
+  - Slack Community
+
+### Media
+
+- Enhanced understanding of Colorama through a tutorial by Tech with Tim.
+
+### ReadMe 
+- Continuously refining the ReadMe based on feedback from fellow students on Slack, with input from mentors such as Gareth Moore and Julia Kinivalova.
+
+For educational purposes only.
