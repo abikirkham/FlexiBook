@@ -97,9 +97,9 @@ book_class()
 
 def edit_booking():
 
-    code = input("Please type you class confirmation code: ")
+    confirmation_code = input("Please type you class confirmation code: ")
 
-     if code in CONFIRMATION_SHEET:
+     if confirmation_code in CONFIRMATION_SHEET:
         print("Booking found. What would you like to edit?")
         print("1. Change date")
         print("2. Change time")
@@ -127,9 +127,9 @@ edit_class(booking_info)
 
 def cancel_booking():
 
-    code = input("Please type you class confirmation code: ")
+    confirmation_code = input("Please type you class confirmation code: ")
 
-     if code in CONFIRMATION_SHEET:
+     if confirmation_code in CONFIRMATION_SHEET:
         print("Booking found. Are you sure you want to cancel?")
         choice = input("Enter 'yes' to confirm cancellation, or 'no' to keep the booking: ")
 
