@@ -55,8 +55,6 @@ if menu_entry_index == '[b]':
         edit_booking()
     elif menu_entry_index == '[c]':
         cancel_booking()
-    elif menu_entry_index == '[v]':
-        view_booking()
     else:
         print("Invalid option selected!")
 
@@ -87,20 +85,68 @@ write_to_confirmation_sheet(confirmation_code, day, chosen_time, name)
             print("Invalid time. Please try again.")
     else:
         print("Invalid day. Please try again.")
+    
+     input("Press Enter to return to the main menu.")
 
 book_class()
+
+
+
+
+
 
 def edit_booking():
 
     code = input("Please type you class confirmation code: ")
 
+     if code in CONFIRMATION_SHEET:
+        print("Booking found. What would you like to edit?")
+        print("1. Change date")
+        print("2. Change time")
+        
+        choice = input("Enter your choice (1/2): ")
+        
+        if choice == '1':
+            book_class()
+        elif choice == '2':
+            book_class()
+        else:
+            print("Invalid choice. Please enter either 1 or 2.")
+            edit_class(booking_info)
+    else:
+        print("Invalid confirmation code. Please try again.")
+
+     input("Press Enter to return to the main menu.")
+
+edit_class(booking_info)
+
+
+
+
+
+
 def cancel_booking():
 
     code = input("Please type you class confirmation code: ")
 
-def view_booking():
+     if code in CONFIRMATION_SHEET:
+        print("Booking found. Are you sure you want to cancel?")
+        choice = input("Enter 'yes' to confirm cancellation, or 'no' to keep the booking: ")
 
-    code = input("Please type you class confirmation code: ")
+        if choice.lower() == 'yes':
+            del booking_info[confirmation_code]
+            print("Booking cancelled.")
+        elif choice.lower() == 'no':
+            print("You remain on our class booking system.")
+        else:
+            print("Invalid choice. Please enter either 'yes' or 'no'.")
+    else:
+        print("Invalid confirmation code. Please try again.")
+
+    input("Press Enter to return to the main menu.")
+
+cancel_class(booking_info)
+
 
 if __name__ == "__main__":
     main()
