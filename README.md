@@ -214,7 +214,7 @@ You must then create a _Config Var_ called `PORT`. Set this to `8000`
 - Leveraged the walkthrough project "Love Sandwich" from Code Institute to utilize the gspread library, set APIs, update worksheets, and fetch data.
 - ASCII text art logo sourced from [fsymbols.com](https://fsymbols.com/text-art/)
 - Menu implementation guidance provided by tutor, sourced from [simple-term-menu](https://pypi.org/project/simple-term-menu/)
-- Utilized a random code generator from [Stack Overflow](https://stackoverflow.com/questions/2257441/random-string-generation-with-upper-case-letters-and-digits) 
+- Utilized a random code generator from [Stack Overflow](https://stackoverflow.com/questions/2257441/random-string-generation-with-upper-case-letters-and-digits)
 - Referenced various online resources including:
   - Google
   - W3C
@@ -224,9 +224,11 @@ You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
 ### Media
 
-- Enhanced understanding of Colorama through a tutorial by Tech with Tim.
+- To install [Colorama](https://pypi.org/project/colorama/) , I found this website very useful for the easiest ways to install.
+- For style examples to go with my Colorama installation, I found this blog by [Amy Richardson](https://www.codu.co/articles/adding-colour-to-python-code-lbai_0u7). 
 
 ### ReadMe 
+
 - Continuously refining the ReadMe based on feedback from fellow students on Slack, with input from mentors such as Gareth Moore and Julia Kinivalova.
 
 For educational purposes only.
