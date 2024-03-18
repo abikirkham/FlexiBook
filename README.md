@@ -100,15 +100,20 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 
 
 ### Testing
-1. Validator Testing
-   - CI Python Linter
-     - This is the result for run.py. In the first run I had some warnings about trailing whitespace and errors about too long lines, but after fixing those, no more errors were found. ADD AN IMAGE
-  - HTML Validator
-    - This is the result for layout.html.  Since I added a favicon, a meta description, a title and some style to the layout.html file, I did check the layout.html file with the Nu Html Checker. In the first run, it came back with an error for the CSS height in the style area because I added a space between the number and the unit. After deleting this space, it came back with no errors or warnings. ADD AN IMAGE
-2. Lighthouse Test
-   - Although I was told that we don’t have to do a Lighthouse test, I still created one for the site, as I added a background image, among other things. The 94% were caused by the background image and the border of the "Run Program" button. I couldn’t improve accessibility further, but since this project wasn’t HTML/CSS first, I thought 94% was still a good result. ADD AN IMAGE
+1. Validation Testing
+   - [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#)
+     - Upon running the Python Linter for `run.py`, initial findings revealed warnings regarding trailing whitespace and errors due to line length exceeding standards. After rectifying these issues, subsequent runs reported no errors. See image below for details.
+   - [HTML Validator](https://validator.w3.org/)
+     - Evaluation of `layout.html` was conducted using the W3C HTML Validator. Notably, after incorporating a favicon, meta description, title, and styling within `layout.html`, the Nu HTML Checker was employed for verification. Initial assessment flagged a CSS syntax error regarding spacing between numerical value and unit. After correcting this, the subsequent validation returned no errors or warnings. Refer to the image for more information.
 
+    ![Validator and Linter Results](image1.png)
 
+2. [Lighthouse Performance Test](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=de)
+   - Despite prior indication that a Lighthouse test was not mandatory, I opted to perform one for the website. The Lighthouse report provides insights into various aspects of the site's performance, accessibility, best practices, and SEO. See image below for details.
+
+    ![Lighthouse Test Report](image2.png)
+
+   
 ### Manual Testing 
 
 | Test | Test Description | Expected Outcome | Result |
