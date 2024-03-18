@@ -84,6 +84,7 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 - [Heroku](https://www.heroku.com/) (Deployment)
 - [GitPod](https://www.gitpod.io) (IDE)
 - [Miro](https://miro.com/app/board/uXjVNhD3dEI=/) (Flowchart Creation)
+- [LanguageTool](https://languagetool.org/) was used to check the grammar and spelling in the README and the Code.
 - [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Small%20Keyboard&t=Type%20Something%20) (Logo Creation)
 - [Google Spreadsheet](https://docs.google.com/spreadsheets/u/0/?pli=1) (Worksheet Creation)
 - [Browserling](https://www.browserling.com/) (Cross-browser Testing)
