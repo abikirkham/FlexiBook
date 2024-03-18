@@ -9,7 +9,7 @@ This project is a simple web application built with Python. It enables users to 
 **Live Site:**
 [Include link here]
 
-[**Repository:**](https://github.com/abikirkham/FlexiBook.git)
+[**Repository link**](https://github.com/abikirkham/FlexiBook.git)
 
 ## Table of Contents
 
