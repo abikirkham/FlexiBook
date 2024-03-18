@@ -13,7 +13,7 @@ This project is a simple web application built with Python. It enables users to 
 
 ## Table of Contents
 
-- [User Exerience](#user_experience)
+- [User Exerience (UX)](#user_experience)
 - [Design](#design)
 - [Features](#features)
 - [Technologies Used](#technologies_used)
@@ -22,7 +22,7 @@ This project is a simple web application built with Python. It enables users to 
 - [Credits](#credits)
 
 
-## User Stories
+## User Experience (UX)
 
 ### For the Owner:
 1. **Viewing Available Classes:** As the owner, I want users to easily view available classes, so they can make informed booking decisions.
