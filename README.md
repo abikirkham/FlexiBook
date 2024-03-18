@@ -251,5 +251,6 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ### ReadMe 
 
 - Continuously refining the ReadMe based on feedback from fellow students on Slack, with input from mentors such as Gareth Moore and Julia Kinivalova.
+- For the mock-up design, I used this [generator](https://techsini.com/multi-mockup/)
 
 For educational purposes only.
