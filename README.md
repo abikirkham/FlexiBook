@@ -19,7 +19,7 @@ This project is a simple web application built with Python. It enables users to 
 - [Credits](#credits)
 
 
-## User Experience (UX)
+## User Experience (UX) :woman_technologist:
 
 ### For the Owner:
 1. **Viewing Available Classes:** As the owner, I want users to easily view available classes, so they can make informed booking decisions.
@@ -46,7 +46,7 @@ This project is a simple web application built with Python. It enables users to 
 
 
 
-## Design
+## Design :art:
 
 ### Imagery - the logo images and where i got this 
 
@@ -62,7 +62,7 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 ### Requirements 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line. This was indetified in the [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#) , which told you if you needed to shorten your lines when they were too long. 
 
-## Features
+## Features :framed_picture:
 
 - logo
 - disclaimer
@@ -72,7 +72,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 - program ending???
 
 
-## Technologies Used
+## Technologies Used :desktop_computer:
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) [/CSS](https://en.wikipedia.org/wiki/CSS)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
@@ -86,7 +86,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 - [Google Spreadsheet](https://docs.google.com/spreadsheets/u/0/?pli=1) (Worksheet Creation)
 - [Browserling](https://www.browserling.com/) (Cross-browser Testing)
 
-## Libraries and Modules
+### Libraries and Modules
 
 - [`google.oauth2.service_account`](https://google-auth.readthedocs.io/en/master/reference/google.oauth2.service_account.html) (Google Authentication)
 - [`gspread`](https://docs.gspread.org/en/v5.10.0/) (Google Sheets Functionality)
@@ -95,7 +95,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 
 
-### Testing
+## Testing :abacus:
 1. Validation Testing
    - [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#)
      - Upon running the Python Linter for `run.py`, initial findings revealed warnings regarding trailing whitespace and errors due to line length exceeding standards. After rectifying these issues, subsequent runs reported no errors. See image below for details.
@@ -139,7 +139,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 
 
-## Deployment
+## Deployment :printer:
 
 #### Github/Heroku
 
@@ -224,7 +224,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 
 
-## Credits
+## Credits :pray:
 
 ### Content 
 - The idea originated from my first project with Code Institute, fueled by my passion for yoga and aspirations for future progression—a booking system for yoga classes.
@@ -252,5 +252,6 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 - Continuously refining the ReadMe based on feedback from fellow students on Slack, with input from mentors such as Gareth Moore and Julia Kinivalova.
 - For the mock-up design, I used this [generator](https://techsini.com/multi-mockup/)
+- Emojis for the sub-headings to break the sections up in a more defined way, I used [GitHub Tools](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
 For educational purposes only.
