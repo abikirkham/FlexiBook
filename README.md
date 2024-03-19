@@ -13,19 +13,19 @@ This project is a simple web application built with Python. It enables users to 
  
 ## Table of Contents
 
-- [User Exerience (UX) :woman_technologist:](#user_experience)
-- [Design :art:](#design)
-- [Features :framed_picture:](#features)
-- [Technologies Used :desktop_computer:](#technologies_used)
-- [Testing :abacus:](#testing)
-- [Deployment :printer:](#deployment)
-- [Credits :pray:](#credits)
+- [User Exerience](##user_experience)
+- [Design](##design)
+- [Features](##features)
+- [Technologies Used](##technologies_used)
+- [Testing](##testing)
+- [Deployment](##deployment)
+- [Credits](##credits)
 
 
 
-## User Experience (UX) :woman_technologist:
+## User Experience
 
-### For the Owner:
+### For the Owner: :woman_technologist:
 1. **Viewing Available Classes:** As the owner, I want users to easily view available classes, so they can make informed booking decisions.
 
 2. **Integration with Google Sheets:** As the owner, I want to integrate Google Sheets for streamlined management of class schedules, confirmation of each booking and organisation.
