@@ -23,27 +23,6 @@ CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
 def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
     CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
 
-def main():
-    print(Fore.GREEN + "FʟᴇxɪBᴏᴏᴋ")
-    print("In this application, you will be able to book your favourite "
-          "yoga class at the date and time most suited to you schedule.")
-
-    options = ["[b] Book a class", "[e] Edit your booking", "[c] Cancel your booking"]
-    terminal_menu = TerminalMenu(options, title="Select your action")
-    menu_entry_index = terminal_menu.show()
-    print(Fore.MAGENTA + f"You have selected {options[menu_entry_index]}!")
-
-    if menu_entry_index == '[b]':
-        book_class()
-    elif menu_entry_index == '[e]':
-        edit_booking()
-    elif menu_entry_index == '[c]':
-        cancel_booking()
-    else:
-        print(Fore.RED + "Invalid option selected!")
-    input("Press Enter to return to the main menu.")
-    main()
-
 def book_class():
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     times = ['8:30am', '12:00pm', '13:30pm', '15:00pm', '17:45pm']
@@ -102,6 +81,27 @@ def cancel_booking():
     else:
         print(Fore.RED + "Invalid confirmation code. Please try again.")
     input("Press Enter to return to the main menu.\n")
+    main()
+
+def main():
+    print(Fore.GREEN + "FʟᴇxɪBᴏᴏᴋ")
+    print("In this application, you will be able to book your favourite "
+          "yoga class at the date and time most suited to you schedule.")
+
+    options = ["[b] Book a class", "[e] Edit your booking", "[c] Cancel your booking"]
+    terminal_menu = TerminalMenu(options, title="Select your action")
+    menu_entry_index = terminal_menu.show()
+    print(Fore.MAGENTA + f"You have selected {options[menu_entry_index]}!")
+
+    if menu_entry_index == '[b]':
+        book_class()
+    elif menu_entry_index == '[e]':
+        edit_booking()
+    elif menu_entry_index == '[c]':
+        cancel_booking()
+    else:
+        print(Fore.RED + "Invalid option selected!")
+    input("Press Enter to return to the main menu.")
     main()
 
 if __name__ == "__main__":
