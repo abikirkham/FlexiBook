@@ -42,8 +42,6 @@ def main():
     else:
         print(Fore.RED + "Invalid option selected!")
     input("Press Enter to return to the main menu.")
-
-if __name__ == "__main__":
     main()
 
 def book_class():
@@ -69,7 +67,7 @@ def book_class():
     else:
         print(Fore.RED + "Invalid day. Please try again.")
     input("Press Enter to return to the main menu.")
-
+    main()
 
 def edit_booking():
     confirmation_code = input("Please type your class confirmation code:\n")
@@ -88,7 +86,7 @@ def edit_booking():
     else:
         print("Invalid confirmation code. Please try again.")
     input("Press Enter to return to the main menu.\n")
-
+    main()
 
 def cancel_booking():
     confirmation_code = input("Please type your confirmation code:\n")
@@ -104,3 +102,7 @@ def cancel_booking():
     else:
         print(Fore.RED + "Invalid confirmation code. Please try again.")
     input("Press Enter to return to the main menu.\n")
+    main()
+
+if __name__ == "__main__":
+    main()
