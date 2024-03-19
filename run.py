@@ -21,10 +21,6 @@ CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
 
 
 def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
-    """
-    2 lines
-    doc string
-    """
     CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
 
 
@@ -66,7 +62,9 @@ def book_class():
             confirmation = input("Please confirm this is correct (yes/no):\n")
             if confirmation.lower() == 'yes':
                 confirmation_code = ''.join(random.choices('0123456789', k=6))
-                print(f"Your booking is confirmed. Confirmation code: {confirmation_code}")
+                print(f"""
+                YAY, booking confirmed. Confirmation code: {confirmation_code}
+                """)
                 write_to_confirmation_sheet(confirmation_code, day, 
                 chosen_time, name)
             else:
@@ -81,7 +79,8 @@ def book_class():
 
 def edit_booking():
     confirmation_code = input("Please type your class confirmation code:\n")
-    if confirmation_code in CONFIRMATION_SHEET:
+    all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
+    if confirmation_code in all_confirmation_codes:
         print(f"""
 Booking found. What would you like to edit?
 
@@ -104,13 +103,20 @@ Booking found. What would you like to edit?
 
 def cancel_booking():
     confirmation_code = input("Please type your confirmation code:\n")
-    if confirmation_code in CONFIRMATION_SHEET:
+    all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
+    all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
+    
+    if confirmation_code in all_confirmation_codes:
+        index = all_confirmation_codes.index(confirmation_code)
+        row_to_delete = all_rows[index]
+
         print("Booking found. Are you sure you want to cancel?")
         choice = input("""
         Enter 'yes' to confirm cancellation, or 'no' to keep the booking:\n
         """)
         if choice.lower() == 'yes':
-            print("Booking cancelled.")
+            CONFIRMATION_SHEET.delete_row(index + 2)  
+            print("Booking canceled.")
         elif choice.lower() == 'no':
             print(Fore.RED + "You remain on our class booking system.")
         else:
