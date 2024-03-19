@@ -41,6 +41,7 @@ def main():
         cancel_booking()
     else:
         print(Fore.RED + "Invalid option selected!")
+    input("Press Enter to return to the main menu.")
 
 if __name__ == "__main__":
     main()
