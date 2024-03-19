@@ -8,6 +8,8 @@ This project is a simple web application built with Python. It enables users to 
 [**Repository link**](https://github.com/abikirkham/FlexiBook.git)
 
  <img src="readme/mock-up.png" width="700">
+
+
  
 ## Table of Contents
 
@@ -18,6 +20,7 @@ This project is a simple web application built with Python. It enables users to 
 - [Testing :abacus:](#testing)
 - [Deployment :printer:](#deployment)
 - [Credits :pray:](#credits)
+
 
 
 ## User Experience (UX) :woman_technologist:
@@ -46,7 +49,6 @@ This project is a simple web application built with Python. It enables users to 
 
 
 
-
 ## Design :art:
 
 ### Imagery - the logo images and where i got this 
@@ -63,6 +65,8 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 ### Requirements 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line. This was indetified in the [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#) , which told you if you needed to shorten your lines when they were too long. 
 
+
+
 ## Features :framed_picture:
 
 - logo
@@ -71,6 +75,8 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 - input validation
 - display of entered data
 - program ending???
+
+
 
 
 ## Technologies Used :desktop_computer:
