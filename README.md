@@ -11,7 +11,7 @@ This project is a simple web application built with Python. It enables users to 
  
 ## Table of Contents
 
-- [User Exerience (UX)](#user_experience)
+- [User Exerience](#user_experience)
 - [Design](#design)
 - [Features](#features)
 - [Technologies Used](#technologies_used)
