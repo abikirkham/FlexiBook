@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "flexibook-417110",
+  "private_key_id": "ab4fd985bf63782fbc06b8b383d1420913bdcdf0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDOQ6hu6oXr8CfW\n5lwxLjx84uai24s3G+ciIjxMtpAUBVQKk7X8SLaSaSDvM08VxaUpHM3+7r6/biYd\nQxEtnv6Q/qqRkNoCj73SYRrXzgLD3xUvDrPvGwy1ZSvlzjtPkwx0pR86qZIYsj+0\nukobV4lDiMSZEnn2mW+EuhC0i5vThqNuVN4B/mrqsvBgT/NmeDn9czoofmBdIrXR\nX/ibQoNk3YD5RcoU7rXihyhQ9B/OuymahNeM3iQdIH7WX0LydSs0rmaVtglJLrnX\ns7n4fpzNS8d4iNxBmUWmgWDkfUjRS0nNSI71F6/i7B4W+crPjpsPmXHTMnwIJanJ\nnjGUnQalAgMBAAECggEABEYmoVW+vKrXSH6xfltk6XmSKeG+ur+bRHvNIBHQXnnV\nyfpRlQ60qcf/5LT9eIgF6hosspGj5jeUFpsjKfzXbY25XxbPTapI1qkoczxTlldz\nCuyVEelPlBqqlDJ3zChR48DgKskEu/pFk6sgifyAXaPh3wIhANkhFHD+k58o9XMV\nNSw0q7IxIwXIg9xwJR6iQqMhQ1jFXL3QOaL+FNSPr4cvK/AHxxn9MUQeqzqGD5cS\n/b5ka0DfnRf3VjrSXCQEo2ik2aknRL5pXsusoEmp14OL06K31dWxoFWbTRmmF7xG\nOPyxmT+RQlQvorSdwmqvHku4z6QN82IP2BfNiwC3qQKBgQD6HZAdeuEYGkPeCDms\nUBVWJGCUizlogM4Et8DVdRyOXmpxuzAOXb59r/FUMjXOb/8UVjLW6v37Wtf1Cx16\nlOaSa9tZq7gRHcSLWG613EiIUyRVwHHG6PhJBED8uMPScbs6OI8kWcKsOCXuntG0\nPf/jiDH69scYtjxvu/YJbsqnqwKBgQDTHfsSvN3Thx4ZMpT0+rd15OAk9XyiXi7O\nnJjH8T5d0kGJkG1BuR4RIJ4iqgSUFQA3C4F6Gecow97j3bOId4AffY4Bi7wxHqf+\nAqeHUnLBr86XMuXK99J6jglqEehdmxBB3VE/QoLqbQvxF5c5D2Z2fvOCSrmCV5Bl\nAUgVhYl67wKBgBcqYcy5Mtv+osaP0HerOy6tU9yuQHTzaSF6u3uJy0lMaWN7SOor\nuJb/ksSPmfgy21dQ3IiXX0rGkTX6/5H49JofL0PQ6c18ClY1rJtfecBWowjmOCOK\nNGTe5f4CRvDY49RypJ9jSOqWkLzXLOkazPaQCMEL1kjtqA9ZQ2KARnjdAoGBALGE\nvTC1VQVf0UQ4zx3rj8Z3TK5nKYTSEyOyc5l0Vg/IE0mcAvLHuOuH9NCLC8yEmCiw\n6Q+FpmUVxl7udd8jNL3F8lmEaRsYfwPMsZfNESeiL+Hdb3IqznY05t+k7TGAiLwJ\nYB8ES1bZmLgCMStOssai2xlMwg5CmO0Fldpa7g5LAoGABc4fcVHl51FzAhu14piL\nueb9igA3j8lIZEeq/EUaUUKL8LBD1C4LGjd5/Fc01f2bybTsfohQB0oG+VNhL1Gj\ndIR7bDof6Hy1SCTMS8C+Cw5sxceB8w0byEcKKKTz/vXsH6HOnX5rVS71BBpXDgJg\nTdjDv/LqSzaIxYH28wC/cXk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "abi-137@flexibook-417110.iam.gserviceaccount.com",
+  "client_id": "116058624568647273320",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/abi-137%40flexibook-417110.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
