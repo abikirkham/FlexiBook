@@ -3,11 +3,12 @@
 ### My Vision
 This project is a simple web application built with Python. It enables users to book yoga classes and provides analytics on the popularity of each class. The analytics are based on the number of bookings for each class, assisting the team in identifying which classes are more popular and which offers they can promote more effectively. This project is hosted on GitHub for version control and collaboration, and it can be deployed to Heroku, a cloud platform as a service (PaaS), for easy management and scalability.
 
-**Live Site:**
-[Include link here]
+[**Live Site:**](https://flexibook-9e934dd29473.herokuapp.com/)
 
 [**Repository link**](https://github.com/abikirkham/FlexiBook.git)
 
+ <img src="readme/mock-up.png" width="700">
+ 
 ## Table of Contents
 
 - [User Exerience (UX)](#user_experience)
