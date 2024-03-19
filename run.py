@@ -88,15 +88,6 @@ def main():
     print(Fore.GREEN + "FʟᴇxɪBᴏᴏᴋ")
     print("In this application, you will be able to book your favourite "
           "yoga class at the date and time most suited to you schedule.")
-    print("DISCLAIMER: ")
-    print("The data entered is stored in a Google Worksheet for the duration"
-          " of use. Once\nall the data has been completed and a topic has been"
-          " selected, you can exit the\nprogram. The data entered will then be"
-          " deleted automatically.\nPlease ensure that when you start the"
-          " program, you go to the end of it, and the\nfarewell message has"
-          " been displayed to guarantee that your data has been \ndeleted"
-          " correctly."
-          )
 
     options = ["[b] Book a class", "[e] Edit your booking", "[c] Cancel your booking"]
     terminal_menu = TerminalMenu(options, title="Select your action")
