@@ -79,26 +79,44 @@ def book_class():
 
 def edit_booking():
     confirmation_code = input("Please type your class confirmation code:\n")
+    # Retrieve all confirmation codes and their corresponding rows from the confirmation sheet
     all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
-    if confirmation_code in all_confirmation_codes:
-        print(f"""
-Booking found. What would you like to edit?
+    all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
 
-1. Change date
-2. Change time
-""")
+    if confirmation_code in all_confirmation_codes:
+        # Find the index of the confirmation code in the list
+        index = all_confirmation_codes.index(confirmation_code)
+        row_to_edit = all_rows[index]
+
+        print("Booking found. What would you like to edit?\n")
+        print("1. Change date\n2. Change time\n")
         choice = input("Enter your choice (1/2):\n")
+
         if choice == '1':
-            book_class()
+            new_day = input("Enter new day:\n")
+            row_to_edit[1] = new_day
         elif choice == '2':
-            book_class()
+            new_time = input("Enter new time:\n")
+            row_to_edit[2] = new_time
         else:
             print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
             edit_booking()
+
+        print("Changes made. Confirm?\n")
+        confirmation = input("Please confirm this is correct (yes/no):\n")
+        if confirmation.lower() == 'yes':
+            CONFIRMATION_SHEET.update
+            ('A' + str(index + 2), [[confirmation_code] + row_to_edit])
+            print("Booking details updated.")
+        else:
+            print("Changes discarded.")
+
     else:
         print("Invalid confirmation code. Please try again.")
+
     input("Press Enter to return to the main menu.\n")
     main()
+
 
 
 def cancel_booking():
