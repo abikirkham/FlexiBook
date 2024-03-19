@@ -100,13 +100,13 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 1. Validation Testing
    - [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#)
      - Upon running the Python Linter for `run.py`, initial findings revealed warnings regarding trailing whitespace and errors due to line length exceeding standards. After rectifying these issues, subsequent runs reported no errors. See image below for details.
-    <img src="readme/CIPL.png" width="700">
+
+<img src="readme/CIPL.png" width="700">
     
    - [HTML Validator](https://validator.w3.org/)
      - Evaluation of `layout.html` was conducted using the W3C HTML Validator. Notably, after incorporating a favicon, meta description, title, and styling within `layout.html`, the Nu HTML Checker was employed for verification. Initial assessment flagged a CSS syntax error regarding spacing between numerical value and unit. After correcting this, the subsequent validation returned no errors or warnings. Refer to the image for more information.
-       <img src="readme/html.png" width="700">
 
-    ![Validator and Linter Results](image1.png)
+<img src="readme/html.png" width="700">
 
 2. [Lighthouse Performance Test](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=de)
    - Despite prior indication that a Lighthouse test was not mandatory, I opted to perform one for the website. The Lighthouse report provides insights into various aspects of the site's performance, accessibility, best practices, and SEO. See image below for details.
