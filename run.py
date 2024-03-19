@@ -2,7 +2,8 @@ import gspread
 import random
 from google.oauth2.service_account import Credentials
 from simple_term_menu import TerminalMenu
-import colorama from colorama import Fore, Back, Style
+import colorama
+from colorama import Fore, Back, Style
 
 
 SCOPE = [
