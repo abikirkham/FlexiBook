@@ -14,12 +14,12 @@ This project is a simple web application built with Python. It enables users to 
 ## Table of Contents
 
 - [User Exerience](#user_experience)
-- [Design](##design)
-- [Features](##features)
-- [Technologies Used](##technologies_used)
-- [Testing](##testing)
-- [Deployment](##deployment)
-- [Credits](##credits)
+- [Design](#design)
+- [Features](#features)
+- [Technologies Used](#technologies_used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
 
 
