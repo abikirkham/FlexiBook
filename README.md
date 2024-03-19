@@ -104,6 +104,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
     
    - [HTML Validator](https://validator.w3.org/)
      - Evaluation of `layout.html` was conducted using the W3C HTML Validator. Notably, after incorporating a favicon, meta description, title, and styling within `layout.html`, the Nu HTML Checker was employed for verification. Initial assessment flagged a CSS syntax error regarding spacing between numerical value and unit. After correcting this, the subsequent validation returned no errors or warnings. Refer to the image for more information.
+       <img src="readme/html.png" width="700">
 
     ![Validator and Linter Results](image1.png)
 
