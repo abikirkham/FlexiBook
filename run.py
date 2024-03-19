@@ -82,9 +82,6 @@ def book_class():
 def edit_booking():
     confirmation_code = input("Please type your class confirmation code:\n")
     if confirmation_code in CONFIRMATION_SHEET:
-        # print("Booking found. What would you like to edit?")
-        # print("1. Change date")
-        # print("2. Change time")
         print(f"""
 Booking found. What would you like to edit?
 
