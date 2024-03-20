@@ -79,18 +79,42 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 ## Features :framed_picture:
 
-- logo
+1. Run programme - Logo/Welcome message
  <img src="readme/logo.png" width="300">
-- welcome
-- input validation
-- - booking
-  - edit
-  - cancel
-- display of entered data
-- - correct
-  - errors
-- end / return 
+2. Navigate the Menu:
+Upon running the program, you will be presented with a menu where you can choose to book a class, edit your booking, or cancel your booking.
+Functionality
 
+3. Book a Class:
+This option allows you to book a yoga class following guide below.
+- Instructions:
+  - When prompted, enter the day of the week you wish to book (e.g., Monday).
+  - Then, choose a time slot from the available options.
+  - Enter your name as requested.
+  - Confirm the booking details when prompted. If correct, your booking will be confirmed with a unique confirmation code.
+  - After completing an action, you will be prompted to press Enter to return to the main menu.
+- Error Handling:
+  - If you input an invalid day or time, you will receive a notification to try again.
+
+4. Edit Your Booking:
+If you need to make changes to your existing booking, select this option.
+- Instructions:
+  - Enter your confirmation code when prompted.
+  - Select the aspect of your booking you wish to edit (date or time).
+  - Follow the prompts to make the necessary changes.
+  - Confirm the changes to update your booking.
+  - After completing an action, you will be prompted to press Enter to return to the main menu.
+- Error Handling:
+  - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
+
+5. Cancel Your Booking:
+Use this option if you need to cancel your existing booking.
+- Instructions:
+  - Enter your confirmation code when prompted.
+  - Confirm the cancellation when prompted.
+  - After completing an action, you will be prompted to press Enter to return to the main menu.
+- Error Handling:
+  - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
 
 ## Technologies Used :desktop_computer:
 
