@@ -175,7 +175,7 @@ Use this option if you need to cancel your existing booking.
 <img src="readme/CIPL.png" width="700">
     
    - [HTML Validator](https://validator.w3.org/)
-     - Evaluation of `layout.html` was conducted using the W3C HTML Validator. Notably, after incorporating a favicon, meta description, title, and styling within `layout.html`, the Nu HTML Checker was employed for verification. Initial assessment flagged a CSS syntax error regarding spacing between numerical value and unit. After correcting this, the subsequent validation returned no errors or warnings. Refer to the image for more information.
+     - Evaluation of `layout.html` was conducted using the W3C HTML Validator. Notably, after incorporating a favicon, meta description and a  title within `layout.html`, the Nu HTML Checker was employed for verification. Refer to the image for more information.
 
 <img src="readme/html.png" width="700">
 
