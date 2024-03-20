@@ -105,7 +105,6 @@ def edit_booking():
     confirmation_code = input(Fore.BLUE + """
     Please type your class confirmation code:\n
     """)
-    # Retrieve all confirmation codes and their corresponding rows from the confirmation sheet
     all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
     all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
 
