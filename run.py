@@ -16,7 +16,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('FlexiBook')
 
-schedule = SHEET.worksheet('schedule')
 CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
 
 
