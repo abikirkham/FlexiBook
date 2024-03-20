@@ -81,60 +81,68 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 1. Run programme - Logo/Welcome message
  <img src="readme/logo.png" width="300">
- <img src="readme/.png" width="300">
+ <img src="readme/welcome-message.png" width="300">
 
 2. Navigate the Menu:
 Upon running the program, you will be presented with a menu where you can choose to book a class, edit your booking, or cancel your booking.
 Functionality
-<img src="readme/.png" width="300">
+<img src="readme/menu.png" width="300">
 
 4. Book a Class:
 This option allows you to book a yoga class following guide below.
 - Instructions:
   - When prompted, enter the day of the week you wish to book (e.g., Monday).
-<img src="readme/.png" width="300">
+<img src="readme/book:days.png" width="300">
   - Then, choose a time slot from the available options.
-<img src="readme/.png" width="300">
+<img src="readme/book:time.png" width="300">
   - Enter your name as requested.
-<img src="readme/.png" width="300">
+<img src="readme/book:name.png" width="300">
   - Confirm the booking details when prompted. If correct, your booking will be confirmed with a unique confirmation code.
-<img src="readme/.png" width="300">
+<img src="readme/book:confirm.png" width="300">
+<img src="readme/confirm-code.png" width="300">
   - After completing an action, you will be prompted to press Enter to return to the main menu.
-<img src="readme/.png" width="300">
+<img src="readme/enter-to-menu.png" width="300">
 - Error Handling:
-  - If you say no when confirming the details of booking. 
+  - If you say no when confirming the details of booking.
+<img src="readme/no-confirm-wrong.png" width="300">
   - If you input an invalid day or time, you will receive a notification to try again.
-<img src="readme/.png" width="300">
+<img src="readme/error-day.png" width="300">
+<img src="readme/error-time.png" width="300">
 
 4. Edit Your Booking:
 If you need to make changes to your existing booking, select this option.
 - Instructions:
   - Enter your confirmation code when prompted.
-<img src="readme/.png" width="300">
+<img src="readme/edit:confirm-code.png" width="300">
   - Select the aspect of your booking you wish to edit (date or time).
-<img src="readme/.png" width="300">
+<img src="readme/date:time.png" width="300">
   - Follow the prompts to make the necessary changes.
-<img src="readme/.png" width="300">
+<img src="readme/new-day.png" width="300">
+<img src="readme/new-time.png" width="300">
   - Confirm the changes to update your booking.
-<img src="readme/.png" width="300">
+<img src="readme/edit-f-confirm.png" width="300">
   - After completing an action, you will be prompted to press Enter to return to the main menu.
-<img src="readme/.png" width="300">
+<img src="readme/edit:confirm:text.png" width="300">
+<img src="readme/enter-to-menu.png" width="300">
 - Error Handling:
+  - If you do not select the correct option, you will receive an error message.
+<img src="readme/error:edit-1:2.png" width="300">
   - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
-<img src="readme/.png" width="300">
+<img src="readme/wrong-code.png" width="300">
 
 5. Cancel Your Booking:
 Use this option if you need to cancel your existing booking.
 - Instructions:
   - Enter your confirmation code when prompted.
-<img src="readme/.png" width="300">
+<img src="readme/cancel:confirm-code.png" width="300">
   - Confirm the cancellation when prompted.
-<img src="readme/.png" width="300">
+<img src="readme/cancel-y:n.png" width="300">
   - After completing an action, you will be prompted to press Enter to return to the main menu.
-<img src="readme/.png" width="300">
+<img src="readme/cancel:confirm.png" width="300">
+<img src="readme/enter-to-menu.png" width="300">
 - Error Handling:
   - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
-<img src="readme/.png" width="300">
+<img src="readme/wrong-code.png" width="300">
 
 ## Technologies Used :desktop_computer:
 
