@@ -104,7 +104,7 @@ This option allows you to book a yoga class following guide below.
 <img src="readme/enter-to-menu.png" width="300">
 - Error Handling:
   - If you say no when confirming the details of booking.
-<img src="readme/no-confirm-wrong.png" width="300">
+<img src="readme/no-confirm-worng.png" width="300">
   - If you input an invalid day or time, you will receive a notification to try again.
 <img src="readme/error-day.png" width="300">
 <img src="readme/error-time.png" width="300">
@@ -126,7 +126,7 @@ If you need to make changes to your existing booking, select this option.
 <img src="readme/enter-to-menu.png" width="300">
 - Error Handling:
   - If you do not select the correct option, you will receive an error message.
-<img src="readme/error:edit-1:2.png" width="300">
+<img src="readme/errror:edit-1:2.png" width="300">
   - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
 <img src="readme/wrong-code.png" width="300">
 
