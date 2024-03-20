@@ -51,13 +51,15 @@ This project is a simple web application built with Python. It enables users to 
 
 ## Design :art:
 
-### Imagery - the logo images and where i got this 
+### Imagery 
+The Flexibook logo, sourced from fsymbols.com, embodies adaptability and versatility through its design. The simplicity of the logo's typography belies its dynamic nature, mirroring the flexibility at the core of Flexibook's services. The use of text art adds a contemporary flair, emphasizing the brand's innovative approach. This logo promises a seamless and user-friendly experience, reflecting the convenience that Flexibook offers to its users.
 <details>
   <summary>Click to see my Logo.</summary>
 <img src="readme/logo.png" width="500"> 
 </details>
 
-### the color scheme??? add this for each color i use
+### Colours
+The color scheme drawn from Colorama, found on pypi.org, infuses Flexibook's branding with vibrancy and energy. Each color selected from Colorama contributes to the visual appeal and functionality of Flexibook's interface. The primary colors inject excitement and enthusiasm, encouraging user engagement, while the secondary colors provide balance and contrast for enhanced readability. Overall, the Colorama color scheme enhances Flexibook's branding, making it both visually appealing and user-friendly.
 <details>
   <summary>Click to see my Color Tool.</summary>
 <img src="readme/color-scheme.png" width="500">
