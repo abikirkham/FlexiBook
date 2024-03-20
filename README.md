@@ -165,7 +165,15 @@ Use this option if you need to cancel your existing booking.
 - [`colorama`](https://pypi.org/project/colorama/) (Text Coloring in Terminal)
 - [`simple_menu`](https://pypi.org/project/simple-term-menu/) (Menu Functionality)
 
+## Google Sheets
 
+HERE PUT IDEA FOR GOOGLE SHEETS AND CREDIT THE PLACES THAT I USED TO HELP ME TO LINK IT AND ABOUT THE GRAPHS
+- THE INPUT OF BOOKING
+- THE CHANGE
+- THE CANCEL
+- THE CHARTS
+ 
+<img src="readme/google-sheets.png" width="300">
 
 ## Testing :abacus:
  ### Validation Testing
