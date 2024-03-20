@@ -13,10 +13,11 @@ This project is a simple web application built with Python. It enables users to 
  
 ## Table of Contents
 
-- [User Exerience](#user_experience)
+- [User Experience](#user_experience)
 - [Design](#design)
 - [Features](#features)
 - [Technologies Used](#technologies_used)
+- [Google Sheets](#google_sheets)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -173,7 +174,7 @@ HERE PUT IDEA FOR GOOGLE SHEETS AND CREDIT THE PLACES THAT I USED TO HELP ME TO 
 - THE CANCEL
 - THE CHARTS
  
-<img src="readme/google-sheets.png" width="300">
+<img src="readme/google-sheets.png" width="500">
 
 ## Testing :abacus:
  ### Validation Testing
