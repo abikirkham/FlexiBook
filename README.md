@@ -52,10 +52,16 @@ This project is a simple web application built with Python. It enables users to 
 ## Design :art:
 
 ### Imagery - the logo images and where i got this 
-
+<details>
+  <summary>Click to see my Logo.</summary>
 <img src="readme/logo.png" width="500"> 
+</details>
 
 ### the color scheme??? add this for each color i use
+<details>
+  <summary>Click to see my Color Tool.</summary>
+<img src="readme/color-scheme.png" width="500">
+</details>
 
 ### Flow Chart
 The flowchary was crafted when I was decisiding how I would structure and display my idea, this was created with [Miro](https://miro.com/app/board/uXjVNhD3dEI=/). This displays the option of the class booking sytem where the user will input their actions and generate a confirmation code once booked a class. The other options are for editting and cancelling the booked classes.
@@ -72,13 +78,16 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ## Features :framed_picture:
 
 - logo
-- disclaimer
-- google spread sheet
+ <img src="readme/logo.png" width="300">
+- welcome
 - input validation
+- - booking
+  - edit
+  - cancel
 - display of entered data
-- program ending???
-
-
+- - correct
+  - errors
+- end / return 
 
 
 ## Technologies Used :desktop_computer:
