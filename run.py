@@ -27,7 +27,7 @@ def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
 def book_class():
     """ One line doc string """
     print("""
-    Welcome to the class booking stage, please follow the instructions provided:
+    Welcome to the class booking stage, please follow the instructions below:
     """)
     days = [
         'Monday',
@@ -42,7 +42,7 @@ def book_class():
 
     print(f"""
             {Fore.BLUE}
-    Our open days are: 
+    Our open days are:
         Monday,
         Tuesday,
         Wednesday,
@@ -54,24 +54,26 @@ def book_class():
     """)
     day = input("Please chose a day of the week you want to book:\n")
 
-    if day.lower() in ['monday',
-        'tuesday',
-        'wednesday',
-        'thursday'
-        'friday',
-        'saturday',
-        'sunday']:
+    if day.lower() in [
+                    'monday',
+                    'tuesday',
+                    'wednesday',
+                    'thursday'
+                    'friday',
+                    'saturday',
+                    'sunday']:
         print(F"""{Fore.BLUE}
         The available times are:
         8:30am, 12:00pm, 13:30pm, 15:00pm, 17:45pm
         {Style.RESET_ALL}
         """)
         chosen_time = input("Choose a time:\n")
-        if chosen_time.lower() in ['8:30am',
-        '12:00pm',
-        '13:30pm',
-        '15:00pm',
-        '17:45pm']:
+        if chosen_time.lower() in [
+                                '8:30am',
+                                '12:00pm',
+                                '13:30pm',
+                                '15:00pm',
+                                '17:45pm']:
             name = input("Please enter your name:\n")
             print(f"""
             {Fore.YELLOW}
@@ -89,8 +91,8 @@ def book_class():
                 YAY, booking confirmed. Confirmation code: {confirmation_code}
                 {Style.RESET_ALL}
                 """)
-                write_to_confirmation_sheet(confirmation_code, day, 
-                chosen_time, name)
+                write_to_confirmation_sheet(confirmation_code,
+                                            day, chosen_time, name)
             else:
                 print("Booking cancelled. Please start again.")
         else:
@@ -152,7 +154,7 @@ def cancel_booking():
     confirmation_code = input("Please type your confirmation code:\n")
     all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
     all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
-    
+
     if confirmation_code in all_confirmation_codes:
         index = all_confirmation_codes.index(confirmation_code)
         row_to_delete = all_rows[index]
@@ -165,7 +167,7 @@ def cancel_booking():
         Enter 'yes' to confirm cancellation, or 'no' to keep the booking:\n
         {Style.RESET_ALL}""")
         if choice.lower() == 'yes':
-            CONFIRMATION_SHEET.delete_row(index + 2)  
+            CONFIRMATION_SHEET.delete_row(index + 2)
             print("Booking canceled.")
         elif choice.lower() == 'no':
             print(Fore.RED + "You remain on our class booking system.")
@@ -187,19 +189,19 @@ def welcome_message():
 ▀▄▄▄▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄█▄▄▀▄▄▄▀▄▄▄▄▀▀▄▄▄▄▀▄▄▄▄▀▄▄▀▄▄▀
 """)
     print("In this application, you will be able to book your favourite "
-            "yoga class at the date and time most suited to you schedule.")
+          "yoga class at the date and time most suited to you schedule.")
 
 
 def main_menu():
-    
+
     options = ["[b] Book a class",
-    "[e] Edit your booking",
-    "[c] Cancel your booking"]
+               "[e] Edit your booking",
+               "[c] Cancel your booking"]
     terminal_menu = TerminalMenu(options, title= Fore.GREEN + """
     Select your action""" + Style.RESET_ALL)
     menu_entry_index = terminal_menu.show()
     print(f"""
-    
+
 {Fore.MAGENTA} You have selected {options[menu_entry_index]}! {Style.RESET_ALL}
     """)
     print(options[menu_entry_index])
