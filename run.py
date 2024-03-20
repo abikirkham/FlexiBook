@@ -161,9 +161,9 @@ def cancel_booking():
         {Fore.BLUE}
         Booking found. Are you sure you want to cancel?
         {Style.RESET_ALL}""")
-        choice = input("""
+        choice = input(f"""{Fore.YELLOW}
         Enter 'yes' to confirm cancellation, or 'no' to keep the booking:\n
-        """)
+        {Style.RESET_ALL}""")
         if choice.lower() == 'yes':
             CONFIRMATION_SHEET.delete_row(index + 2)  
             print("Booking canceled.")
