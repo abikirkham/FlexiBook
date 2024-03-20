@@ -122,7 +122,7 @@ If you need to make changes to your existing booking, select this option.
   - Confirm the changes to update your booking.
 <img src="readme/edit-f-confirm.png" width="300">
   - After completing an action, you will be prompted to press Enter to return to the main menu.
-<img src="readme/edit:confirm:text.png" width="300">
+<img src="readme/edit:confm:text.png" width="300">
 <img src="readme/enter-to-menu.png" width="300">
 - Error Handling:
   - If you do not select the correct option, you will receive an error message.
