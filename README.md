@@ -53,6 +53,8 @@ This project is a simple web application built with Python. It enables users to 
 
 ### Imagery - the logo images and where i got this 
 
+<img src="readme/logo.png" width="500"> 
+
 ### the color scheme??? add this for each color i use
 
 ### Flow Chart
