@@ -102,7 +102,9 @@ def book_class():
 
 
 def edit_booking():
-    confirmation_code = input("Please type your class confirmation code:\n")
+    confirmation_code = input(Fore.BLUE + """
+    Please type your class confirmation code:\n
+    """)
     # Retrieve all confirmation codes and their corresponding rows from the confirmation sheet
     all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
     all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
@@ -112,26 +114,30 @@ def edit_booking():
         index = all_confirmation_codes.index(confirmation_code)
         row_to_edit = all_rows[index]
 
-        print("Booking found. What would you like to edit?\n")
-        print("1. Change date\n2. Change time\n")
+        print(f"""{Fore.GREEN}
+        Booking found. What would you like to edit?\n
+        {Style.RESET_ALL}""")
+        print(Fore.BLUE + "1. Change date\n2. Change time\n")
         choice = input("Enter your choice (1/2):\n")
 
         if choice == '1':
-            new_day = input("Enter new day:\n")
+            new_day = input(Fore.GREEN + "Enter new day:\n")
             row_to_edit[1] = new_day
         elif choice == '2':
-            new_time = input("Enter new time:\n")
+            new_time = input(Fore.GREEN + "Enter new time:\n")
             row_to_edit[2] = new_time
         else:
             print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
             edit_booking()
 
         print("Changes made. Confirm?\n")
-        confirmation = input("Please confirm this is correct (yes/no):\n")
+        confirmation = input(f"""{Fore.YELLOW}
+        Please confirm this is correct (yes/no):\n
+        {Style.RESET_ALL}""")
         if confirmation.lower() == 'yes':
             CONFIRMATION_SHEET.update
             ('A' + str(index + 2), [[confirmation_code] + row_to_edit])
-            print("Booking details updated.")
+            print(Fore.GREEN + "Booking details updated.")
         else:
             print("Changes discarded.")
 
@@ -152,7 +158,10 @@ def cancel_booking():
         index = all_confirmation_codes.index(confirmation_code)
         row_to_delete = all_rows[index]
 
-        print("Booking found. Are you sure you want to cancel?")
+        print(f"""
+        {Fore.BLUE}
+        Booking found. Are you sure you want to cancel?
+        {Style.RESET_ALL}""")
         choice = input("""
         Enter 'yes' to confirm cancellation, or 'no' to keep the booking:\n
         """)
