@@ -245,6 +245,14 @@ instead of the worksheet’s index:
 
 ## Browser Capability :computer:
 
+The tests were conducted using the following browsers:
+Google Chrome Version 121.0.6167.160 
+The following tests were conducted by using browserling 
+Edge Version 118
+Firefox 119
+Opera 104
+I have tested the website on Safari on macOS Sonoma 14.3, but unfortunately, it just opens the website and starts the program, but I can’t enter any input.
+
 ## Deployment :printer:
 
 The tests were conducted using the following browsers:
