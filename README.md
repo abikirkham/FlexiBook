@@ -19,6 +19,8 @@ This project is a simple web application built with Python. It enables users to 
 - [Technologies Used](#technologies_used)
 - [Google Sheets](#google_sheets)
 - [Testing](#testing)
+- [Bug](#bugs)
+- [Browser Capability](#browser_capability)
 - [Deployment](#deployment)
 - [Credits](#credits)
 
@@ -214,9 +216,44 @@ HERE PUT IDEA FOR GOOGLE SHEETS AND CREDIT THE PLACES THAT I USED TO HELP ME TO 
 | Input of choice - 1/2 | ..... | To go to selected option. | result |
 | Input of enter - return to menu | ..... | To go to main menu. | result |
 
+## Bugs :ant:
 
+Clearing the screen:
+First I had implemented the following function to clear the screen:
+
+    def clear_screen ():
+        '''
+        Clears the screen from text
+        '''
+        os.system('cls' if os.name == 'nt' else 'clear')
+Unfortunately, this version did not delete the entire screen in the deployed version of the application(it did work properly in my IDE), but only the visible area. Parts of the logo were displayed twice when the screen emptied, as soon as the text was longer than the viewport. My mentor Brian Macheria then gave me a version with which the function worked smoothly:
+
+    print("\033c", end="")
+Initially, I had this version as a backup, but after another conversation with my mentor, I deleted the original version.
+
+Typing-print statement in the weight/height validation: 
+When validating the input of size and weight, the typing-print statement: "Your height/weight should be given in m/kg and contain a point for the decimal place." always appeared again if the user has given a value outside the reasonable range, but it should only appear once at the beginning. I could fix this by changing the position of this typing-print statement.
+
+Duplicate the worksheet user 
+After I made the project available for code review in the Slack community of the Code Institute, I was told that the age calculation for the "Happy Birthday" message of a 104-year-old was apparently incorrect. After checking the corresponding function that worked as expected, I looked into the spreadsheet and found that someone clearly did not exit the application correctly. The still existing worksheet with the old data in it was then copied and not the user worksheet. Since the functions of the trivia theme rely on a special cell(F2), only the value of this copied sheet (in this case with an age of 45) was used. I was able to fix this by referring to the worksheet’s name:
+
+    WORKSHEET_USER = SHEET.worksheet('User')
+instead of the worksheet’s index:
+
+   WORKSHEET_USER = SHEET.get_worksheet(0)
+
+
+## Browser Capability :computer:
 
 ## Deployment :printer:
+
+The tests were conducted using the following browsers:
+Google Chrome Version 121.0.6167.160 
+The following tests were conducted by using browserling 
+Edge Version 118
+Firefox 119
+Opera 104
+I have tested the website on Safari on macOS Sonoma 14.3, but unfortunately, it just opens the website and starts the program, but I can’t enter any input.
 
 #### Github/Heroku
 
