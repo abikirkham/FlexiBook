@@ -110,7 +110,6 @@ def edit_booking():
     all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
 
     if confirmation_code in all_confirmation_codes:
-        # Find the index of the confirmation code in the list
         index = all_confirmation_codes.index(confirmation_code)
         row_to_edit = all_rows[index]
 
@@ -135,8 +134,9 @@ def edit_booking():
         Please confirm this is correct (yes/no):\n
         {Style.RESET_ALL}""")
         if confirmation.lower() == 'yes':
-            CONFIRMATION_SHEET.update
-            ('A' + str(index + 2), [[confirmation_code] + row_to_edit])
+            # Update the Google Sheet with the new values
+            CONFIRMATION_SHEET.update('B' + str(index + 2), [[new_day]])
+            CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
             print(Fore.GREEN + "Booking details updated.")
         else:
             print("Changes discarded.")
@@ -146,7 +146,6 @@ def edit_booking():
 
     input("Press Enter to return to the main menu.\n")
     main()
-
 
 
 def cancel_booking():
