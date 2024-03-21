@@ -290,7 +290,7 @@ First I had implemented the following function to update the booking on the 'edi
         else:
             print("Changes discarded.")
     
-Unfortunately, this made no changes to the work sheet. 
+Unfortunately, this made no changes to the work sheet. I decided to run my code through [ChatGPT](https://chat.openai.com/auth/login) to ask why I could not see the change on my googlesheets once the user had confirmed this change. I understood what error was made and i have explained this below:
 
 new_time = None  # Initialize new_time variable
 
