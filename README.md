@@ -171,6 +171,10 @@ Use this option if you need to cancel your existing booking.
 ## Google Sheets
 In the Flexibook application's Google Sheets section, the integration between Python code and Google Sheets facilitates seamless monitoring of yoga class bookings. The Google Sheets section serves as a centralised hub for tracking class reservations, displaying essential details such as confirmation code, day, time, and participant's name. This integration allows for efficient management of bookings, with options to book, edit, or cancel classes directly from the sheet. When booking a class, users input their details via the Python code, which updates the corresponding sheet fields. The edit functionality recognises confirmation codes to modify class dates or times, ensuring accurate scheduling. Additionally, the cancel option identifies confirmation codes and removes corresponding bookings upon confirmation, providing flexibility and ease of use for both users and yoga instructors. Below are the pieces of code I used to implement this:
 
+- I used Code Institutes Project 3 Love-Sandwhiches tutorial to help me initaially understand how to import my google sheets, below there is a path on how I did this, but here you will find an image of my code.
+
+<img src="readme/input.png" width="500">
+  
 - The input of booking
 
 <img src="readme/input.png" width="500">
@@ -355,7 +359,6 @@ I have tested the website on Safari on macOS Sonoma 14.3, but unfortunately, it 
    - Create CREDS using the gspread authorize method to access the created worksheet data.
 
 **Note:** Ensure the JSON file is never committed to GitHub as it contains sensitive information. Create a .gitignore file in the workspace and add the name of the JSON file to it.
-
 
 
 ## Credits :pray:
