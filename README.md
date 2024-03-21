@@ -174,10 +174,11 @@ In the Flexibook application's Google Sheets section, the integration between Py
 - I used Code Institutes Project 3 Love-Sandwhiches tutorial to help me initaially understand how to import my google sheets, below there is a path on how I did this, but here you will find an image of my code.
 
 <img src="readme/input.png" width="500">
+<img src="readme/write-to-sheet.png" width="500">
   
 - The input of booking
 
-<img src="readme/input.png" width="500">
+<img src="readme/confirm.png" width="500">
    
 - Recognisation of confirmation code
 
