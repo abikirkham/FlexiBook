@@ -257,6 +257,10 @@ In the Flexibook application's Google Sheets section, the integration between Py
 
 | Test | Test Description | Expected Outcome | Result |
 |------|------------------|------------------|--------|
+| Run Programme | .... | will show.... | Pass |
+| Select option - book | .... | Will show option chosen and options to moove forward | Pass |
+| Select option - edit | .... | Will show option chosen and options to moove forward | Pass |
+| Select option - cancel | .... | Will show option chosen and options to moove forward | Pass |
 | Input of day - Monday | .... | To go to next selection of time. | result |
 | Input of day - Tuesday | ..... | To go to next selection of time. | result |
 | Input of day - Wednesday | ..... | To go to next selection of time. | result |
