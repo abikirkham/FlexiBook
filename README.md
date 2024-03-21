@@ -236,28 +236,16 @@ In the Flexibook application's Google Sheets section, the integration between Py
 ## Bugs :ant:
 
 Clearing the screen:
-First I had implemented the following function to clear the screen:
+First I had implemented the following function to update the booking on the 'edit' menu option:
 
-    def clear_screen ():
-        '''
-        Clears the screen from text
-        '''
-        os.system('cls' if os.name == 'nt' else 'clear')
-Unfortunately, this version did not delete the entire screen in the deployed version of the application(it did work properly in my IDE), but only the visible area. Parts of the logo were displayed twice when the screen emptied, as soon as the text was longer than the viewport. My mentor Brian Macheria then gave me a version with which the function worked smoothly:
-
-    print("\033c", end="")
-Initially, I had this version as a backup, but after another conversation with my mentor, I deleted the original version.
-
-Typing-print statement in the weight/height validation: 
-When validating the input of size and weight, the typing-print statement: "Your height/weight should be given in m/kg and contain a point for the decimal place." always appeared again if the user has given a value outside the reasonable range, but it should only appear once at the beginning. I could fix this by changing the position of this typing-print statement.
-
-Duplicate the worksheet user 
-After I made the project available for code review in the Slack community of the Code Institute, I was told that the age calculation for the "Happy Birthday" message of a 104-year-old was apparently incorrect. After checking the corresponding function that worked as expected, I looked into the spreadsheet and found that someone clearly did not exit the application correctly. The still existing worksheet with the old data in it was then copied and not the user worksheet. Since the functions of the trivia theme rely on a special cell(F2), only the value of this copied sheet (in this case with an age of 45) was used. I was able to fix this by referring to the worksheet’s name:
-
-    WORKSHEET_USER = SHEET.worksheet('User')
-instead of the worksheet’s index:
-
-   WORKSHEET_USER = SHEET.get_worksheet(0)
+      if confirmation.lower() == 'yes':
+            CONFIRMATION_SHEET.update
+            ('A' + str(index + 2), [[confirmation_code] + row_to_edit])
+            print(Fore.GREEN + "Booking details updated.")
+        else:
+            print("Changes discarded.")
+    
+Unfortunately, this made no changes to the work sheet. 
 
 
 ## Browser Capability :computer:
