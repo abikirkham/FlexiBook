@@ -190,7 +190,7 @@ def welcome_message():
 ▀▄▄▄▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄█▄▄▀▄▄▄▀▄▄▄▄▀▀▄▄▄▄▀▄▄▄▄▀▄▄▀▄▄▀
 """)
     print("In this application, you will be able to book your favourite "
-          "yoga class at the date and time most suited to you schedule.")
+          "yoga class at the \ndate and time most suited to you schedule.")
 
 
 def main_menu():
