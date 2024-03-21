@@ -102,6 +102,10 @@ def book_class():
     main()
 
 
+def clear_screen():
+    print("\033c", end="")
+
+
 def edit_booking():
     confirmation_code = input(Fore.BLUE + """
     Please type your class confirmation code:\n
@@ -151,6 +155,10 @@ def edit_booking():
     main()
 
 
+def clear_screen():
+    print("\033c", end="")
+
+
 def cancel_booking():
     confirmation_code = input("Please type your confirmation code:\n")
     all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
@@ -180,6 +188,10 @@ def cancel_booking():
         print(Fore.RED + "Invalid confirmation code. Please try again.")
     input("Press Enter to return to the main menu.\n")
     main()
+
+
+def clear_screen():
+    print("\033c", end="")
 
 
 def welcome_message():
