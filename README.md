@@ -235,7 +235,7 @@ In the Flexibook application's Google Sheets section, the integration between Py
 
 ## Bugs :ant:
 
-Clearing the screen:
+Updating classes:
 First I had implemented the following function to update the booking on the 'edit' menu option:
 
       if confirmation.lower() == 'yes':
