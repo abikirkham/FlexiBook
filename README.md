@@ -169,14 +169,26 @@ Use this option if you need to cancel your existing booking.
 - [`simple_menu`](https://pypi.org/project/simple-term-menu/) (Menu Functionality)
 
 ## Google Sheets
+In the Flexibook application's Google Sheets section, the integration between Python code and Google Sheets facilitates seamless monitoring of yoga class bookings. The Google Sheets section serves as a centralised hub for tracking class reservations, displaying essential details such as confirmation code, day, time, and participant's name. This integration allows for efficient management of bookings, with options to book, edit, or cancel classes directly from the sheet. When booking a class, users input their details via the Python code, which updates the corresponding sheet fields. The edit functionality recognises confirmation codes to modify class dates or times, ensuring accurate scheduling. Additionally, the cancel option identifies confirmation codes and removes corresponding bookings upon confirmation, providing flexibility and ease of use for both users and yoga instructors. Below are the pieces of code I used to implement this:
 
-HERE PUT IDEA FOR GOOGLE SHEETS AND CREDIT THE PLACES THAT I USED TO HELP ME TO LINK IT AND ABOUT THE GRAPHS
-- THE INPUT OF BOOKING
-- THE CHANGE
-- THE CANCEL
-- THE CHARTS
- 
-<img src="readme/google-sheets.png" width="500">
+- The input of booking
+
+<img src="readme/input.png" width="500">
+   
+- Recognisation of confirmation code
+
+<img src="readme/recognise.png" width="500">
+   
+- The change
+
+<img src="readme/change.png" width="500">
+   
+- The cancel
+
+<img src="readme/cancel.png" width="500">
+   
+- The charts - I added these charts on my google sheet which will constantly chnage as the application is used. This is for the owner of the sheet to monitor the most and least popular dates and times.
+ <img src="readme/google-sheets.png" width="500">
 
 ## Testing :abacus:
  ### Validation Testing
