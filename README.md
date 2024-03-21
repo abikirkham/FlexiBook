@@ -208,14 +208,28 @@ In the Flexibook application's Google Sheets section, the integration between Py
    
 - The change
 
-        row_to_edit[1] = new_day
-        row_to_edit[2] = new_time
+        new_time = None  # Initialize new_time variable
+
+        if choice == '1':
+            new_day = input(Fore.GREEN + "Enter new day:\n")
+            row_to_edit[1] = new_day
+        elif choice == '2':
+            new_time = input(Fore.GREEN + "Enter new time:\n")
+            row_to_edit[2] = new_time
+        else:
+            print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
+            edit_booking()
+
+        print("Changes made. Confirm?\n")
+        confirmation = input(f"""{Fore.YELLOW}
+        Please confirm this is correct (yes/no):\n
+        {Style.RESET_ALL}""")
         if confirmation.lower() == 'yes':
-                    CONFIRMATION_SHEET.update
-                    ('A' + str(index + 2), [[confirmation_code] + row_to_edit])
-                    print(Fore.GREEN + "Booking details updated.")
-                else:
-                    print("Changes discarded.")
+            # Update the Google Sheet with the new values
+            if new_time is not None:  # Check if new_time is assigned
+                CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
+            CONFIRMATION_SHEET.update('B' + str(index + 2), [[row_to_edit[1]]])
+            print(Fore.GREEN + "Booking details updated.")
 
    
 - The cancel
@@ -277,6 +291,29 @@ First I had implemented the following function to update the booking on the 'edi
             print("Changes discarded.")
     
 Unfortunately, this made no changes to the work sheet. 
+
+new_time = None  # Initialize new_time variable
+
+        if choice == '1':
+            new_day = input(Fore.GREEN + "Enter new day:\n")
+            row_to_edit[1] = new_day
+        elif choice == '2':
+            new_time = input(Fore.GREEN + "Enter new time:\n")
+            row_to_edit[2] = new_time
+        else:
+            print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
+            edit_booking()
+
+        print("Changes made. Confirm?\n")
+        confirmation = input(f"""{Fore.YELLOW}
+        Please confirm this is correct (yes/no):\n
+        {Style.RESET_ALL}""")
+        if confirmation.lower() == 'yes':
+            # Update the Google Sheet with the new values
+            if new_time is not None:  # Check if new_time is assigned
+                CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
+            CONFIRMATION_SHEET.update('B' + str(index + 2), [[row_to_edit[1]]])
+            print(Fore.GREEN + "Booking details updated.")
 
 
 ## Browser Capability :computer:
