@@ -173,7 +173,7 @@ In the Flexibook application's Google Sheets section, the integration between Py
 
 - I used Code Institutes Project 3 Love-Sandwhiches tutorial to help me initaially understand how to import my google sheets, below there is a path on how I did this, but here you will find an image of my code.
 
-      import gspread
+import gspread
 import random
 from google.oauth2.service_account import Credentials
 from simple_term_menu import TerminalMenu
@@ -190,9 +190,7 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('FlexiBook')
-
 CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
-
 
 def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
     CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
@@ -200,13 +198,12 @@ def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
   
 - The input of booking
 
-write_to_confirmation_sheet(confirmation_code,
-                                            day, chosen_time, name)
+write_to_confirmation_sheet(confirmation_code, day, chosen_time, name)
    
 - Recognisation of confirmation code
 
  all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
-    all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
+ all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
 
     if confirmation_code in all_confirmation_codes:
         index = all_confirmation_codes.index(confirmation_code)
@@ -215,9 +212,7 @@ write_to_confirmation_sheet(confirmation_code,
 - The change
 
 row_to_edit[1] = new_day
-
 row_to_edit[2] = new_time
-
 if confirmation.lower() == 'yes':
             CONFIRMATION_SHEET.update
             ('A' + str(index + 2), [[confirmation_code] + row_to_edit])
