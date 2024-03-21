@@ -173,24 +173,63 @@ In the Flexibook application's Google Sheets section, the integration between Py
 
 - I used Code Institutes Project 3 Love-Sandwhiches tutorial to help me initaially understand how to import my google sheets, below there is a path on how I did this, but here you will find an image of my code.
 
-<img src="readme/input.png" width="500">
-<img src="readme/write-to-sheet.png" width="500">
+      import gspread
+import random
+from google.oauth2.service_account import Credentials
+from simple_term_menu import TerminalMenu
+import colorama
+from colorama import Fore, Back, Style
+
+
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+]
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open('FlexiBook')
+
+CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
+
+
+def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
+    CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
+
   
 - The input of booking
 
-<img src="readme/confirm.png" width="500">
+write_to_confirmation_sheet(confirmation_code,
+                                            day, chosen_time, name)
    
 - Recognisation of confirmation code
 
-<img src="readme/recognise.png" width="500">
+ all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
+    all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
+
+    if confirmation_code in all_confirmation_codes:
+        index = all_confirmation_codes.index(confirmation_code)
+        row_to_edit = all_rows[index]
    
 - The change
 
-<img src="readme/change.png" width="500">
+row_to_edit[1] = new_day
+
+row_to_edit[2] = new_time
+
+if confirmation.lower() == 'yes':
+            CONFIRMATION_SHEET.update
+            ('A' + str(index + 2), [[confirmation_code] + row_to_edit])
+            print(Fore.GREEN + "Booking details updated.")
+        else:
+            print("Changes discarded.")
+
    
 - The cancel
 
-<img src="readme/cancel.png" width="500">
+CONFIRMATION_SHEET.delete_row(index + 2)
+
    
 - The charts - I added these charts on my google sheet which will constantly chnage as the application is used. This is for the owner of the sheet to monitor the most and least popular dates and times.
  <img src="readme/google-sheets.png" width="500">
