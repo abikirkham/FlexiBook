@@ -119,6 +119,8 @@ def edit_booking():
         print(Fore.BLUE + "1. Change date\n2. Change time\n")
         choice = input("Enter your choice (1/2):\n")
 
+        new_time = None  # Initialize new_time variable
+
         if choice == '1':
             new_day = input(Fore.GREEN + "Enter new day:\n")
             row_to_edit[1] = new_day
@@ -135,8 +137,9 @@ def edit_booking():
         {Style.RESET_ALL}""")
         if confirmation.lower() == 'yes':
             # Update the Google Sheet with the new values
-            CONFIRMATION_SHEET.update('B' + str(index + 2), [[new_day]])
-            CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
+            if new_time is not None:  # Check if new_time is assigned
+                CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
+            CONFIRMATION_SHEET.update('B' + str(index + 2), [[row_to_edit[1]]])
             print(Fore.GREEN + "Booking details updated.")
         else:
             print("Changes discarded.")
