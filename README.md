@@ -316,6 +316,13 @@ new_time = None  # Initialize new_time variable
             print(Fore.GREEN + "Booking details updated.")
 
 
+1. Initialization of new_time: Before the conditional statement where the user is prompted to choose what to edit, I initialized a variable called new_time and set it to None. This ensures that new_time is always defined before it's referenced later in the code.
+2. Conditionally updating new_time: Inside the conditional statement where the user selects what to edit (date or time), I added logic to update the new_time variable only if the user chooses to change the time (choice == '2'). If the user chooses to change the date (choice == '1'), new_time remains None.
+3. Using new_time conditionally: When updating the Google Sheet, I used new_time only if it was provided by the user. This was achieved by checking if new_time is not None before updating the Google Sheet. If new_time is still None, it means the user didn't choose to change the time, so we only update the date.
+   
+By making these adjustments, the code ensures that new_time is properly defined and used according to the user's input, preventing the UnboundLocalError and ensuring correct behavior when updating the Google Sheet.
+
+
 ## Browser Capability :computer:
 
 The tests were conducted using the following browsers:
