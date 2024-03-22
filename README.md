@@ -26,7 +26,7 @@ This project is a simple web application built with Python. It enables users to 
 
 
 
-## User Experience
+## User Experience <a name="user_experience"></a>
 
 ### For the Owner: :woman_technologist:
 1. **Viewing Available Classes:** As the owner, I want users to easily view available classes, so they can make informed booking decisions.
@@ -52,7 +52,7 @@ This project is a simple web application built with Python. It enables users to 
 
 
 
-## Design :art:
+## Design <a name="design"></a> :art:
 
 ### Imagery 
 The Flexibook logo, sourced from fsymbols.com, embodies adaptability and versatility through its design. The simplicity of the logo's typography belies its dynamic nature, mirroring the flexibility at the core of Flexibook's services. The use of text art adds a contemporary flair, emphasizing the brand's innovative approach. This logo promises a seamless and user-friendly experience, reflecting the convenience that Flexibook offers to its users.
@@ -79,7 +79,7 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line. This was indetified in the [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#) , which told you if you needed to shorten your lines when they were too long. 
 
 
-## Features :framed_picture:
+## Features <a name="features"></a> :framed_picture:
 
 1. **Run Programme - Logo/Welcome Message**  
    <details>
@@ -177,7 +177,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
    </details>
 
 
-## Technologies Used :desktop_computer:
+## Technologies Used <a name="technologies_used"></a> :desktop_computer:
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) [/CSS](https://en.wikipedia.org/wiki/CSS)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
@@ -198,7 +198,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 - [`colorama`](https://pypi.org/project/colorama/) (Text Coloring in Terminal)
 - [`simple_menu`](https://pypi.org/project/simple-term-menu/) (Menu Functionality)
 
-## Google Sheets
+## Google Sheets <a name="google_sheets"></a>
 In the Flexibook application's Google Sheets section, the integration between Python code and Google Sheets facilitates seamless monitoring of yoga class bookings. The Google Sheets section serves as a centralised hub for tracking class reservations, displaying essential details such as confirmation code, day, time, and participant's name. This integration allows for efficient management of bookings, with options to book, edit, or cancel classes directly from the sheet. When booking a class, users input their details via the Python code, which updates the corresponding sheet fields. The edit functionality recognises confirmation codes to modify class dates or times, ensuring accurate scheduling. Additionally, the cancel option identifies confirmation codes and removes corresponding bookings upon confirmation, providing flexibility and ease of use for both users and yoga instructors. Below are the pieces of code I used to implement this:
 
 - I used Code Institutes Project 3 Love-Sandwhiches tutorial to help me initaially understand how to import my google sheets, below there is a path on how I did this, but here you will find an image of my code. I then used [this site](https://www.datacamp.com/tutorial/how-to-analyze-data-in-google-sheets-with-python-a-step-by-step-guide) to allow me to assess further how I can use this to do the actions I want it to do.
@@ -270,7 +270,7 @@ In the Flexibook application's Google Sheets section, the integration between Py
 - The charts - I added these charts on my google sheet which will constantly chnage as the application is used. This is for the owner of the sheet to monitor the most and least popular dates and times.
  <img src="readme/google-sheets.png" width="500">
 
-## Testing :abacus:
+## Testing <a name="testing"></a> :abacus:
  ### Validation Testing
    - [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#)
      - Upon running the Python Linter for `run.py`, initial findings revealed warnings regarding trailing whitespace and errors due to line length exceeding standards. After rectifying these issues, subsequent runs reported no errors. See image below for details.
@@ -301,7 +301,7 @@ In the Flexibook application's Google Sheets section, the integration between Py
 | Input of Enter - Return to Menu | Simply press enter at the end of a function | Pressing enter should smoothly return the user to the main menu, enhancing user experience and ease of navigation within the application. | Pass |
 
 
-## Bugs :ant:
+## Bugs <a name="bugs"></a> :ant:
 
 Updating classes:
 First I had implemented the following function to update the booking on the 'edit' menu option:
@@ -346,7 +346,7 @@ new_time = None  # Initialize new_time variable
 By making these adjustments, the code ensures that new_time is properly defined and used according to the user's input, preventing the UnboundLocalError and ensuring correct behavior when updating the Google Sheet.
 
 
-## Browser Capability :computer:
+## Browser Capability <a name="browser_capability"></a> :computer:
 
 The tests were conducted using the following browsers:
 Google Chrome Version 121.0.6167.160 
@@ -356,7 +356,7 @@ Firefox 119
 Opera 104
 I have tested the website on Safari on macOS Sonoma 14.3, but unfortunately, it just opens the website and starts the program, but I can’t enter any input.
 
-## Deployment :printer:
+## Deployment <a name="deployment"></a> :printer:
 
 The tests were conducted using the following browsers:
 Google Chrome Version 121.0.6167.160 
@@ -448,7 +448,7 @@ I have tested the website on Safari on macOS Sonoma 14.3, but unfortunately, it 
 **Note:** Ensure the JSON file is never committed to GitHub as it contains sensitive information. Create a .gitignore file in the workspace and add the name of the JSON file to it.
 
 
-## Credits :pray:
+## Credits <a name="credits"></a> :pray:
 
 ### Content 
 - The idea originated from my first project with Code Institute, fueled by my passion for yoga and aspirations for future progression—a booking system for yoga classes.
