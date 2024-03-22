@@ -51,54 +51,62 @@ def book_class():
         Sunday
         {Style.RESET_ALL}
     """)
-    day = input("Please chose a day of the week you want to book:\n")
 
-    if day.lower() in [
-                    'monday',
-                    'tuesday',
-                    'wednesday',
-                    'thursday'
-                    'friday',
-                    'saturday',
-                    'sunday']:
-        print(F"""{Fore.BLUE}
-        The available times are:
-        8:30am, 12:00pm, 13:30pm, 15:00pm, 17:45pm
-        {Style.RESET_ALL}
-        """)
-        chosen_time = input("Choose a time:\n")
-        if chosen_time.lower() in [
-                                '8:30am',
-                                '12:00pm',
-                                '13:30pm',
-                                '15:00pm',
-                                '17:45pm']:
-            name = input("Please enter your name:\n")
-            print(f"""
-            {Fore.YELLOW}
-            Booking confirmed for {day} at {chosen_time} for {name}.
-            """)
-            confirmation = input(f"""
-            {Fore.YELLOW}
-            Please confirm this is correct (yes/no):\n
+    while True:
+        day = input("Please choose a day of the week you want to book:\n")
+
+        if day.lower() in [
+                        'monday',
+                        'tuesday',
+                        'wednesday',
+                        'thursday',
+                        'friday',
+                        'saturday',
+                        'sunday']:
+            print(F"""{Fore.BLUE}
+            The available times are:
+            8:30am, 12:00pm, 13:30pm, 15:00pm, 17:45pm
             {Style.RESET_ALL}
             """)
-            if confirmation.lower() == 'yes':
-                confirmation_code = ''.join(random.choices('0123456789', k=6))
-                print(f"""
-                {Fore.GREEN}
-                YAY, booking confirmed. Confirmation code: {confirmation_code}
-                {Style.RESET_ALL}
-                """)
-                write_to_confirmation_sheet(confirmation_code,
-                                            day, chosen_time, name)
-            else:
-                print("Booking cancelled. Please start again.")
+            while True:
+                chosen_time = input("Choose a time:\n")
+                if chosen_time.lower() in [
+                                    '8:30am',
+                                    '12:00pm',
+                                    '13:30pm',
+                                    '15:00pm',
+                                    '17:45pm']:
+                    name = input("Please enter your name:\n")
+                    print(f"""
+                    {Fore.YELLOW}
+                    Booking confirmed for {day} at {chosen_time} for {name}.
+                    """)
+                    confirmation = input(f"""
+                    {Fore.YELLOW}
+                    Please confirm this is correct (yes/no):\n
+                    {Style.RESET_ALL}
+                    """)
+                    if confirmation.lower() == 'yes':
+                        confirmation_code = ''.join
+                        (random.choices('0123456789', k=6))
+                        print(f"""
+                        {Fore.GREEN}
+                        YAY, booking confirmed. Confirmation code:
+                        {confirmation_code}
+                        {Style.RESET_ALL}
+                        """)
+                        write_to_confirmation_sheet(confirmation_code,
+                                                    day, chosen_time, name)
+                        return
+                    else:
+                        print("Booking cancelled. Please start again.")
+                        break
+                else:
+                    print(Fore.RED + "Invalid time. Please try again.")
+                    print("Please type your entry exactly as displayed.")
         else:
-            print(Fore.RED + "Invalid time. Please try again.")
-    else:
-        print(Fore.RED + "Invalid day. Please try again.")
-    input("Press Enter to return to the main menu.")
+            print(Fore.RED + "Invalid day. Please try again.")
+            print("Please type your entry exactly as displayed.")
     main()
 
 
@@ -190,14 +198,14 @@ def welcome_message():
 ▀▄▄▄▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄█▄▄▀▄▄▄▀▄▄▄▄▀▀▄▄▄▄▀▄▄▄▄▀▄▄▀▄▄▀
 """)
     print("In this application, you will be able to book your favourite "
-          "yoga class at the \ndate and time most suited to you schedule.")
+            "yoga class at the \ndate and time most suited to you schedule.")
 
 
 def main_menu():
 
     options = ["[b] Book a class",
-               "[e] Edit your booking",
-               "[c] Cancel your booking"]
+                "[e] Edit your booking",
+                "[c] Cancel your booking"]
     terminal_menu = TerminalMenu(options, title= Fore.GREEN + """
     Select your action""" + Style.RESET_ALL)
     menu_entry_index = terminal_menu.show()
