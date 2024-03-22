@@ -124,8 +124,8 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
      - If you say no when confirming the details of the booking.  
        ![No Confirmation Error](readme/no-confirm-worng.png)
      - If you input an invalid day or time, you will receive a notification to try again.  
-       ![Day of Week Error](readme/error-day-of-week.png)  
-       ![Time of Day Error](readme/error-time-of-day.png)
+       ![Day of Week Error](readme/error-day-of-the-week.png)  
+       ![Time of Day Error](readme/error-time-of-the-day.png)
    
    </details>
 
