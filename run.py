@@ -24,7 +24,7 @@ def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
 
 
 def book_class():
-    """ One line doc string """
+    """Function to book a class"""
     print("""
     Welcome to the class booking stage, please follow the instructions below:
     """)
@@ -104,10 +104,17 @@ def book_class():
                 else:
                     print(Fore.RED + "Invalid time. Please try again.")
                     print("Please type your entry exactly as displayed.")
+                    if input("""
+                    Do you want to return to the main menu? (yes/no)\n
+                    """).lower() == 'yes':
+                        main_menu()
         else:
             print(Fore.RED + "Invalid day. Please try again.")
             print("Please type your entry exactly as displayed.")
-    main()
+            if input("""
+            Do you want to return to the main menu? (yes/no)\n
+            """).lower() == 'yes':
+                main_menu()
 
 
 def edit_booking():
