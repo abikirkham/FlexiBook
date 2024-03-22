@@ -79,89 +79,103 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line. This was indetified in the [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#) , which told you if you needed to shorten your lines when they were too long. 
 
 
-
 ## Features :framed_picture:
 
-1. Run programme - Logo/Welcome message
-<details>
- <summary>Click to Expand.</summary>
- <img src="readme/logo.png" width="300">
- <img src="readme/welcome-message.png" width="300">
-</details>
+1. **Run Programme - Logo/Welcome Message**  
+   <details>
+   <summary>Click to Expand.</summary>
+   
+   ![Logo](readme/logo.png)
+   ![Welcome Message](readme/welcome-message.png)
+   
+   </details>
 
-2. Navigate the Menu:
-<details>
- <summary>Click to Expand.</summary>
-Upon running the program, you will be presented with a menu where you can choose to book a class, edit your booking, or cancel your booking.
-Functionality
+2. **Navigate the Menu**  
+   <details>
+   <summary>Click to Expand.</summary>
+   
+   Upon running the program, you will be presented with a menu where you can choose to book a class, edit your booking, or cancel your booking.
+   
+   Functionality:  
+   ![Menu](readme/menu.png)
+   
+   </details>
 
- <img src="readme/menu.png" width="300">
-</details>
+3. **Book a Class**  
+   <details>
+   <summary>Click to Expand.</summary>
+   
+   This option allows you to book a yoga class following the guide below.
+   
+   - **Instructions**:
+     - When prompted, enter the day of the week you wish to book (e.g., Monday).  
+       ![Book Days](readme/book:days.png)
+     - Then, choose a time slot from the available options.  
+       ![Book Time](readme/book:time.png)
+     - Enter your name as requested.  
+       ![Book Name](readme/book:name.png)
+     - Confirm the booking details when prompted. If correct, your booking will be confirmed with a unique confirmation code.  
+       ![Booking Confirmation](readme/book:confirm.png)  
+       ![Confirmation Code](readme/confirm-code.png)  
+     - After completing an action, you will be prompted to press Enter to return to the main menu.  
+       ![Enter to Menu](readme/enter-to-menu.png)
+       
+   - **Error Handling**:
+     - If you say no when confirming the details of the booking.  
+       ![No Confirmation Error](readme/no-confirm-worng.png)
+     - If you input an invalid day or time, you will receive a notification to try again.  
+       ![Day of Week Error](readme/error-day-of-week.png)  
+       ![Time of Day Error](readme/error-time-of-day.png)
+   
+   </details>
 
-3. Book a Class:
-<details>
- <summary>Click to Expand.</summary>
-This option allows you to book a yoga class following guide below.
-- Instructions:
-  - When prompted, enter the day of the week you wish to book (e.g., Monday).
-<img src="readme/book:days.png" width="300">
-  - Then, choose a time slot from the available options.
-<img src="readme/book:time.png" width="300">
-  - Enter your name as requested.
-<img src="readme/book:name.png" width="300">
-  - Confirm the booking details when prompted. If correct, your booking will be confirmed with a unique confirmation code.
-<img src="readme/book:confirm.png" width="300">
-<img src="readme/confirm-code.png" width="300">
-  - After completing an action, you will be prompted to press Enter to return to the main menu.
-<img src="readme/enter-to-menu.png" width="300">
-- Error Handling:
-  - If you say no when confirming the details of booking.
-<img src="readme/no-confirm-worng.png" width="300">
-  - If you input an invalid day or time, you will receive a notification to try again.
-<img src="readme/error-day-of-week.png" width="300">
-<img src="readme/error-time-of-day.png" width="300">
-</details>
+4. **Edit Your Booking**  
+   <details>
+   <summary>Click to Expand.</summary>
+   
+   If you need to make changes to your existing booking, select this option.
+   
+   - **Instructions**:
+     - Enter your confirmation code when prompted.  
+       ![Edit Confirmation Code](readme/edit:confirm-code.png)
+     - Select the aspect of your booking you wish to edit (date or time).  
+       ![Edit Date/Time](readme/date:time.png)
+     - Follow the prompts to make the necessary changes.  
+       ![New Day](readme/new-day.png)  
+       ![New Time](readme/new-time.png)
+     - Confirm the changes to update your booking.  
+       ![Edit Confirmation](readme/edit-f-confirm.png)  
+     - After completing an action, you will be prompted to press Enter to return to the main menu.  
+       ![Enter to Menu](readme/enter-to-menu.png)
+   
+   - **Error Handling**:
+     - If you do not select the correct option, you will receive an error message.  
+       ![Edit Error](readme/errror:edit-1:2.png)
+     - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.  
+       ![Wrong Code](readme/wrong-code.png)
+   
+   </details>
 
-4. Edit Your Booking:
-<details>
- <summary>Click to Expand.</summary>
-If you need to make changes to your existing booking, select this option.
-- Instructions:
-  - Enter your confirmation code when prompted.
-<img src="readme/edit:confirm-code.png" width="300">
-  - Select the aspect of your booking you wish to edit (date or time).
-<img src="readme/date:time.png" width="300">
-  - Follow the prompts to make the necessary changes.
-<img src="readme/new-day.png" width="300">
-<img src="readme/new-time.png" width="300">
-  - Confirm the changes to update your booking.
-<img src="readme/edit-f-confirm.png" width="300">
-  - After completing an action, you will be prompted to press Enter to return to the main menu.
-<img src="readme/edit:confm:text.png" width="300">
-<img src="readme/enter-to-menu.png" width="300">
-- Error Handling:
-  - If you do not select the correct option, you will receive an error message.
-<img src="readme/errror:edit-1:2.png" width="300">
-  - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
-<img src="readme/wrong-code.png" width="300">
-</details>
+5. **Cancel Your Booking**  
+   <details>
+   <summary>Click to Expand.</summary>
+   
+   Use this option if you need to cancel your existing booking.
+   
+   - **Instructions**:
+     - Enter your confirmation code when prompted.  
+       ![Cancel Confirmation Code](readme/cancel:confirm-code.png)
+     - Confirm the cancellation when prompted.  
+       ![Cancel Yes/No](readme/cancel-y:n.png)
+     - After completing an action, you will be prompted to press Enter to return to the main menu.  
+       ![Enter to Menu](readme/enter-to-menu.png)
+   
+   - **Error Handling**:
+     - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.  
+       ![Wrong Code](readme/wrong-code.png)
+   
+   </details>
 
-5. Cancel Your Booking:
-<details>
- <summary>Click to Expand.</summary>
-Use this option if you need to cancel your existing booking.
-- Instructions:
-  - Enter your confirmation code when prompted.
-<img src="readme/cancel:confirm-code.png" width="300">
-  - Confirm the cancellation when prompted.
-<img src="readme/cancel-y:n.png" width="300">
-  - After completing an action, you will be prompted to press Enter to return to the main menu.
-<img src="readme/cancel:confirm.png" width="300">
-<img src="readme/enter-to-menu.png" width="300">
-- Error Handling:
-  - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
-<img src="readme/wrong-code.png" width="300">
-</details>
 
 ## Technologies Used :desktop_computer:
 
