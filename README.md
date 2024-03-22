@@ -26,9 +26,9 @@ This project is a simple web application built with Python. It enables users to 
 
 
 
-## User Experience <a name="user_experience"></a>
+## User Experience <a name="user_experience"></a> :woman_technologist:
 
-### For the Owner: :woman_technologist:
+### For the Owner: 
 1. **Viewing Available Classes:** As the owner, I want users to easily view available classes, so they can make informed booking decisions.
 
 2. **Integration with Google Sheets:** As the owner, I want to integrate Google Sheets for streamlined management of class schedules, confirmation of each booking and organisation.
