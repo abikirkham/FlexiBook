@@ -216,7 +216,7 @@ def main_menu():
              "[b] Book a class",
              "[e] Edit your booking",
              "[c] Cancel your booking"]
-    terminal_menu = TerminalMenu(options, title= Fore.GREEN + """
+    terminal_menu = TerminalMenu(options, title=Fore.GREEN + """
     Select your action""" + Style.RESET_ALL)
     menu_entry_index = terminal_menu.show()
     print(f"""
