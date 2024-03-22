@@ -479,4 +479,3 @@ I have tested the website on Safari on macOS Sonoma 14.3, but unfortunately, it 
 - For the mock-up design, I used this [generator](https://techsini.com/multi-mockup/)
 - Emojis for the sub-headings to break the sections up in a more defined way, I used [GitHub Tools](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
-For educational purposes only.
