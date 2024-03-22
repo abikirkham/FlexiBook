@@ -94,7 +94,8 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
  <summary>Click to Expand.</summary>
 Upon running the program, you will be presented with a menu where you can choose to book a class, edit your booking, or cancel your booking.
 Functionality
-<img src="readme/menu.png" width="300">
+
+ <img src="readme/menu.png" width="300">
 </details>
 
 3. Book a Class:
