@@ -118,8 +118,8 @@ This option allows you to book a yoga class following guide below.
   - If you say no when confirming the details of booking.
 <img src="readme/no-confirm-worng.png" width="300">
   - If you input an invalid day or time, you will receive a notification to try again.
-<img src="readme/error-day.png" width="300">
-<img src="readme/error-time.png" width="300">
+<img src="readme/error-day-of-week.png" width="300">
+<img src="readme/error-time-of-day.png" width="300">
 </details>
 
 4. Edit Your Booking:
