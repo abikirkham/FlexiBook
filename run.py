@@ -160,9 +160,9 @@ def edit_booking():
             print("Changes discarded.")
 
     else:
-        print("Invalid confirmation code. Please try again.")
+        print(Fore.RED + "Invalid confirmation code. Please try again.")
 
-    input("Press Enter to return to the main menu.\n")
+    input(Fore.WHITE + "Press Enter to return to the main menu.\n")
     main()
 
 
@@ -193,7 +193,7 @@ def cancel_booking():
             """)
     else:
         print(Fore.RED + "Invalid confirmation code. Please try again.")
-    input("Press Enter to return to the main menu.\n")
+    input(Fore.WHITE + "Press Enter to return to the main menu.\n")
     main()
 
 
