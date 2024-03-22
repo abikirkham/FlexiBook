@@ -19,7 +19,7 @@ This project is a simple web application built with Python. It enables users to 
 - [Technologies Used](#technologies_used)
 - [Google Sheets](#google_sheets)
 - [Testing](#testing)
-- [Bug](#bugs)
+- [Bugs](#bugs)
 - [Browser Capability](#browser_capability)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -348,13 +348,14 @@ By making these adjustments, the code ensures that new_time is properly defined 
 
 ## Browser Capability <a name="browser_capability"></a> :computer:
 
-The tests were conducted using the following browsers:
-Google Chrome Version 121.0.6167.160 
-The following tests were conducted by using browserling 
-Edge Version 118
-Firefox 119
-Opera 104
-I have tested the website on Safari on macOS Sonoma 14.3, but unfortunately, it just opens the website and starts the program, but I can’t enter any input.
+The project has been tested for compatibility with the following browsers:
+
+- Google Chrome (Version 121.0.6167.160)
+- Edge (Version 118)
+- Firefox (Version 119)
+- Opera (Version 104)
+
+Additionally, testing has been conducted on Safari, specifically on macOS Sonoma 14.3. While the website loads and initiates the program, users may encounter issues with input functionality.
 
 ## Deployment <a name="deployment"></a> :printer:
 
