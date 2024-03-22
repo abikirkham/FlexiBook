@@ -83,15 +83,23 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ## Features :framed_picture:
 
 1. Run programme - Logo/Welcome message
+<details>
+ <summary>Click to Expand.</summary>
  <img src="readme/logo.png" width="300">
  <img src="readme/welcome-message.png" width="300">
+</details>
 
 2. Navigate the Menu:
+<details>
+ <summary>Click to Expand.</summary>
 Upon running the program, you will be presented with a menu where you can choose to book a class, edit your booking, or cancel your booking.
 Functionality
 <img src="readme/menu.png" width="300">
+</details>
 
-4. Book a Class:
+3. Book a Class:
+<details>
+ <summary>Click to Expand.</summary>
 This option allows you to book a yoga class following guide below.
 - Instructions:
   - When prompted, enter the day of the week you wish to book (e.g., Monday).
@@ -111,8 +119,11 @@ This option allows you to book a yoga class following guide below.
   - If you input an invalid day or time, you will receive a notification to try again.
 <img src="readme/error-day.png" width="300">
 <img src="readme/error-time.png" width="300">
+</details>
 
 4. Edit Your Booking:
+<details>
+ <summary>Click to Expand.</summary>
 If you need to make changes to your existing booking, select this option.
 - Instructions:
   - Enter your confirmation code when prompted.
@@ -132,8 +143,11 @@ If you need to make changes to your existing booking, select this option.
 <img src="readme/errror:edit-1:2.png" width="300">
   - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
 <img src="readme/wrong-code.png" width="300">
+</details>
 
 5. Cancel Your Booking:
+<details>
+ <summary>Click to Expand.</summary>
 Use this option if you need to cancel your existing booking.
 - Instructions:
   - Enter your confirmation code when prompted.
@@ -146,6 +160,7 @@ Use this option if you need to cancel your existing booking.
 - Error Handling:
   - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.
 <img src="readme/wrong-code.png" width="300">
+</details>
 
 ## Technologies Used :desktop_computer:
 
