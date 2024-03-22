@@ -272,30 +272,30 @@ In the Flexibook application's Google Sheets section, the integration between Py
 
 | Test | Test Description | Expected Outcome | Result |
 |------|------------------|------------------|--------|
-| Run Programme | .... | will show.... | Pass |
-| Select option - book | .... | Will show option chosen and options to moove forward | Pass |
-| Select option - edit | .... | Will show option chosen and options to moove forward | Pass |
-| Select option - cancel | .... | Will show option chosen and options to moove forward | Pass |
-| Input of day - Monday | .... | To go to next selection of time. | result |
-| Input of day - Tuesday | ..... | To go to next selection of time. | result |
-| Input of day - Wednesday | ..... | To go to next selection of time. | result |
-| Input of day - Thursday | ..... | To go to next selection of time. | result |
-| Input of day - Friday | ..... | To go to next selection of time. | result |
-| Input of day - Saturday | ..... | To go to next selection of time. | result |
-| Input of day - Sunday | ..... | To go to next selection of time. | result |
-| Input of day - Error | ..... | Will ask to input again. | result |
-| Input of time - 8:30AM | ..... | To go to next selection of Name. | result |
-| Input of time - 12:00PM | ..... | To go to next selection of Name. | result |
-| Input of time - 13:30PM | ..... | To go to next selection of Name. | result |
-| Input of time - 15:00PM | ..... | To go to next selection of Name. | result | 
-| Input of time - 17:45PM | ..... | To go to next selection of Name. | result |
-| Input of time - Error | ..... | Will ask to input again. | result |
-| Input of name - yes | ..... | To go to next selection of confirmation. | result |
-| Input of name - no | ..... | To go to next selection of confirmation. | result |
-| Input of confirmation code | ..... | To go to next selection action. | result |
-| Input of confirmation code - Error | ..... | Will ask to input again. | result |
-| Input of choice - 1/2 | ..... | To go to selected option. | result |
-| Input of enter - return to menu | ..... | To go to main menu. | result |
+| Run Programme | Open the link for the live website or click on the 'Run Program' button | As soon as the page is loaded or the Run Program button was clicked, the logo for the application, the welcome message and the menu should be displayed | Pass |
+| Select option - book | Press letter 'b' and hit enter | Will show the option chosen and options select which day the user wants to book.| Pass |
+| Select option - edit | Press letter 'e' and hit enter | This will confirm they have selected to edit their booking and ask for their confirmation code. | Pass |
+| Select option - cancel | Press letter 'c' and hit enter | This will confirm they have selected to edit their booking and ask for their confirmation code. | Pass |
+| Input of day - Monday | User will need to type 'monday' as shown. Then hit enter. | If this is a valid input this will go straight to the select a time phase. | Pass |
+| Input of day - Tuesday | User will need to type 'tuesday' as shown. Then hit enter. | If this is a valid input this will go straight to the select a time phase. | Pass |
+| Input of day - Wednesday | User will need to type 'wednesday' as shown. Then hit enter. | If this is a valid input this will go straight to the select a time phase. | Pass |
+| Input of day - Thursday | User will need to type 'thursday' as shown. Then hit enter. | If this is a valid input this will go straight to the select a time phase. | Pass |
+| Input of day - Friday | User will need to type 'friday' as shown. Then hit enter. | If this is a valid input this will go straight to the select a time phase. | Pass |
+| Input of day - Saturday | User will need to type 'saturday' as shown. Then hit enter. | If this is a valid input this will go straight to the select a time phase. | Pass |
+| Input of day - Sunday | User will need to type 'sunday' as shown. Then hit enter. | If this is a valid input this will go straight to the select a time phase. | Pass |
+| Input of day - Error | If user inputs a day written, such as 'mon, tue' or 'm, t' then hits enter | Will ask to input again. Prompting the user to fully type the word. | Pass |
+| Input of time - 8:30AM | User will need to type '8:30am' as shown. Then hit enter. | If this is a valid input this will go straight to the input your name phase. | Pass |
+| Input of time - 12:00PM | User will need to type '12:00pm' as shown. Then hit enter. | If this is a valid input this will go straight to the input your name phase. | Pass |
+| Input of time - 13:30PM | User will need to type '13:30pm' as shown. Then hit enter. | If this is a valid input this will go straight to the input your name phase. | Pass |
+| Input of time - 15:00PM | User will need to type '15:00pm' as shown. Then hit enter. | If this is a valid input this will go straight to the input your name phase. | Pass | 
+| Input of time - 17:45PM | User will need to type '17:45pm' as shown. Then hit enter. | If this is a valid input this will go straight to the input your name phase. | Pass |
+| Input of time - Error | If user inputs a day written, such as '8.30, 0830' or '3pm' then hits enter | Will ask to input again. Prompting the user to fully type the input as shown. | Pass |
+| Input of name - yes | User will need to type 'yes' as shown. Then hit enter. | To go to next selection of confirmation. | Pass |
+| Input of name - no | User will need to type 'no' as shown. Then hit enter. | To go to next selection of confirmation. | Pass |
+| Input of confirmation code | User will need to type their confirmation code which will have been given when previously booked. Then hit enter. | To go to next menu of actions. | Pass |
+| Input of confirmation code - Error | If user inputs a code not on our system. The code will always be a 6 digit number. | The application will  show a message to say we do not recognise the number and ask to input again. | Pass |
+| Input of choice - 1/2 | User will need to input '1' or '2' to select either change date or time of booking. Then hit enter | To go to selected option. | Pass |
+| Input of enter - return to menu | User will reach this stage at the end of a function. They only need to press enter. | To go to main menu. | Pass |
 
 ## Bugs :ant:
 
