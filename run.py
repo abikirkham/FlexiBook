@@ -94,7 +94,8 @@ def book_class():
                     {Style.RESET_ALL}
                     """)
                     if confirmation.lower() == 'yes':
-                        confirmation_code = ''.join(random.choices('0123456789', k=6))
+                        confirmation_code =
+                        ''.join(random.choices('0123456789', k=6))
                         print(f"""
                         {Fore.GREEN}
                         YAY, booking confirmed. Confirmation code:
@@ -140,7 +141,7 @@ def edit_booking():
         Booking found. What would you like to edit?\n
         {Style.RESET_ALL}""")
         print(Fore.BLUE + "1. Change date\n2. Change time\n")
-        
+
         # Loop until a valid choice is made
         while True:
             choice = input("Enter your choice (1/2):\n")
@@ -155,7 +156,7 @@ def edit_booking():
                 break  # Break out of the loop after updating the time
             else:
                 print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
-        
+
         print("Changes made. Confirm?\n")
         confirmation = input(f"""{Fore.YELLOW}
         Please confirm this is correct (yes/no):\n
@@ -165,7 +166,8 @@ def edit_booking():
             if choice == '2':
                 CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
             elif choice == '1':
-                CONFIRMATION_SHEET.update('B' + str(index + 2), [[row_to_edit[1]]])
+                CONFIRMATION_SHEET.update('B' + str(index + 2),
+                [[row_to_edit[1]]])
             print(Fore.GREEN + "Booking details updated.")
         else:
             print("Changes discarded.")
@@ -211,6 +213,7 @@ def cancel_booking():
 
 def welcome_message():
     """ Welcome mesage function """
+    clear_screen()
     print(Fore.MAGENTA + """
 █▄─▄▄─█▄─▄███▄─▄▄─█▄─▀─▄█▄─▄█▄─▄─▀█─▄▄─█─▄▄─█▄─█─▄█
 ██─▄████─██▀██─▄█▀██▀─▀███─███─▄─▀█─██─█─██─██─▄▀██
@@ -256,3 +259,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
