@@ -359,7 +359,7 @@ You can create a local copy of the GitHub repository using one of the following 
     * Open a folder on your computer with the terminal.
     * Run the following command:
         ```
-        git clone https://github.com/IuliiaKonovalova/felxibook.git
+        git clone https://github.com/abikirkham/FlexiBook
         ```
 
 ### Install Python Module Dependencies
