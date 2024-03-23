@@ -22,6 +22,7 @@ CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
 def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
     CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
 
+
 def clear_screen():
     """
     Clears the screen from text
@@ -166,8 +167,9 @@ def edit_booking():
             if choice == '2':
                 CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
             elif choice == '1':
-                CONFIRMATION_SHEET.update('B' + str(index + 2),
-                [[row_to_edit[1]]])
+                CONFIRMATION_SHEET.update(
+                    'B' + str(index + 2), [[row_to_edit[1]]]
+                )
             print(Fore.GREEN + "Booking details updated.")
         else:
             print("Changes discarded.")
@@ -177,6 +179,7 @@ def edit_booking():
 
     input(Fore.WHITE + "Press Enter to return to the main menu.\n")
     main()
+
 
 def cancel_booking():
     clear_screen()
@@ -259,4 +262,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
