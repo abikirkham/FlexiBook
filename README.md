@@ -253,7 +253,7 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 In the Flexibook application's Google Sheets section, the integration between Python code and Google Sheets facilitates seamless monitoring of yoga class bookings. The Google Sheets section serves as a centralised hub for tracking class reservations, displaying essential details such as confirmation code, day, time, and participant's name. This integration allows for efficient management of bookings, with options to book, edit, or cancel classes directly from the sheet. When booking a class, users input their details via the Python code, which updates the corresponding sheet fields. The edit functionality recognises confirmation codes to modify class dates or times, ensuring accurate scheduling. Additionally, the cancel option identifies confirmation codes and removes corresponding bookings upon confirmation, providing flexibility and ease of use for both users and yoga instructors. Below are the pieces of code I used to implement this:
 
 - I used Code Institutes Project 3 Love-Sandwhiches tutorial to help me initaially understand how to import my google sheets, below there is a path on how I did this, but here you will find an image of my code. I then used [this site](https://www.datacamp.com/tutorial/how-to-analyze-data-in-google-sheets-with-python-a-step-by-step-guide) to allow me to assess further how I can use this to do the actions I want it to do.
-
+```python
         import gspread
         import random
         from google.oauth2.service_account import Credentials
@@ -272,23 +272,23 @@ In the Flexibook application's Google Sheets section, the integration between Py
         CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
         def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
             CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
-
+```
   
 - The input of booking
-
+```python
         write_to_confirmation_sheet(confirmation_code, day, chosen_time, name)
-   
+   ```
 - Recognisation of confirmation code
-
+```python
          all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
          all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
 
             if confirmation_code in all_confirmation_codes:
                 index = all_confirmation_codes.index(confirmation_code)
                 row_to_edit = all_rows[index]
-   
+   ```
 - The change of class booked
-
+```python
         new_time = None  # Initialize new_time variable
 
         if choice == '1':
@@ -311,13 +311,13 @@ In the Flexibook application's Google Sheets section, the integration between Py
                 CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
             CONFIRMATION_SHEET.update('B' + str(index + 2), [[row_to_edit[1]]])
             print(Fore.GREEN + "Booking details updated.")
+```
 
-   
 - The cancel of class booked
 
         CONFIRMATION_SHEET.delete_row(index + 2)
 
-   
+
 - The charts - I added these charts on my google sheet which will constantly change as the application is used. This is for the owner of the sheet to monitor the most and least popular dates and times.
  <img src="documentation/google-sheets.png" width="500">
 
@@ -452,26 +452,35 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 Updating classes:
 First I had implemented the following function to update the booking on the 'edit' menu option:
 
+```python
       if confirmation.lower() == 'yes':
             CONFIRMATION_SHEET.update
             ('A' + str(index + 2), [[confirmation_code] + row_to_edit])
             print(Fore.GREEN + "Booking details updated.")
         else:
             print("Changes discarded.")
-    
+```
+
 Unfortunately, this made no changes to the work sheet. The solution to this is show and explained below:
 
+```python 
 new_time = None  # Initialize new_time variable
 
-        if choice == '1':
-            new_day = input(Fore.GREEN + "Enter new day:\n")
-            row_to_edit[1] = new_day
-        elif choice == '2':
-            new_time = input(Fore.GREEN + "Enter new time:\n")
-            row_to_edit[2] = new_time
-        else:
-            print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
-            edit_booking()
+        while True:
+            choice = input("Enter your choice (1/2):\n")
+
+            if choice == '1':
+                new_day = input(Fore.GREEN + "Enter new day:\n")
+                row_to_edit[1] = new_day
+                break  # Break out of the loop after updating the day
+            elif choice == '2':
+                new_time = input(Fore.GREEN + "Enter new time:\n")
+                row_to_edit[2] = new_time
+                break  # Break out of the loop after updating the time
+            else:
+                print(Fore.RED + """
+                Invalid choice. Please enter either 1 or 2.
+                """ + Fore.RESET)
 
         print("Changes made. Confirm?\n")
         confirmation = input(f"""{Fore.YELLOW}
@@ -479,11 +488,16 @@ new_time = None  # Initialize new_time variable
         {Style.RESET_ALL}""")
         if confirmation.lower() == 'yes':
             # Update the Google Sheet with the new values
-            if new_time is not None:  # Check if new_time is assigned
+            if choice == '2':
                 CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
-            CONFIRMATION_SHEET.update('B' + str(index + 2), [[row_to_edit[1]]])
+            elif choice == '1':
+                CONFIRMATION_SHEET.update(
+                    'B' + str(index + 2), [[row_to_edit[1]]]
+                )
             print(Fore.GREEN + "Booking details updated.")
-
+        else:
+            print("Changes discarded.")
+```
 
 1. Initialisation of new_time: Before the conditional statement where the user is prompted to choose what to edit, I initialised a variable called new_time and set it to None. This ensures that new_time is always defined before it's referenced later in the code.
 2. Conditionally updating new_time: Inside the conditional statement where the user selects what to edit (date or time), I added logic to update the new_time variable only if the user chooses to change the time (choice == '2'). If the user chooses to change the date (choice == '1'), new_time remains None.
