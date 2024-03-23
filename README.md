@@ -299,6 +299,7 @@ In the Flexibook application's Google Sheets section, the integration between Py
 | Input of Confirmation Code - Error | Input a code not recognized | In case of an unrecognized code, the application should notify the user and prompt them to input the correct confirmation code, ensuring data security and accuracy. | Pass |
 | Input of Choice - 1/2 | Input '1' or '2' to select an option | The application should respond according to the user's choice, facilitating seamless navigation and interaction with the booking system. | Pass |
 | Input of Enter - Return to Menu | Simply press enter at the end of a function | Pressing enter should smoothly return the user to the main menu, enhancing user experience and ease of navigation within the application. | Pass |
+| Clear Screen Function | User will need to select a function from menu with either (b, e or c) | Once selected, this will clear the previous function on the application. | Pass |
 
 
 ## Bugs <a name="bugs"></a> :ant:
@@ -452,6 +453,7 @@ Additionally, testing has been conducted on Safari, specifically on macOS Sonoma
 - ASCII text art logo sourced from [fsymbols.com](https://fsymbols.com/text-art/)
 - Menu implementation guidance provided by tutor, sourced from [simple-term-menu](https://pypi.org/project/simple-term-menu/)
 - Utilised a random code generator from [Stack Overflow](https://stackoverflow.com/questions/2257441/random-string-generation-with-upper-case-letters-and-digits)
+- As suggested in a peer review for improved usability, I found on [Quora](https://www.quora.com/Is-there-a-Clear-screen-function-in-Python) a funtion to clear the screen once selecting a section to ensure the screen is not too messy.
 - Referenced various online resources including:
   - Google
   - W3C
