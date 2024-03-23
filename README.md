@@ -9,21 +9,49 @@ This project is a simple web application built with Python. It enables users to 
 
  <img src="documentation/mock-up.png" width="700">
 
-
  
 ## Table of Contents
 
-- [User Experience](#user_experience)
-- [Design](#design)
-- [Features](#features)
-- [Technologies Used](#technologies_used)
-- [Google Sheets](#google_sheets)
-- [Testing](#testing)
-- [Bugs](#bugs)
-- [Browser Capability](#browser_capability)
-- [Deployment](#deployment)
-- [Credits](#credits)
+1. [User Experience](#user_experience)
+   - For the Owner
+   - For the User
 
+2. [Design](#design)
+   - Imagery
+   - Colours
+   - Flow Chart
+
+3. [Features](#features)
+   - Run Programme - Logo/Welcome Message
+   - Navigate the Menu
+   - Book a Class
+   - Edit Your Booking
+   - Cancel Your Booking
+
+4. [Technologies Used](#technologies_used)
+
+5. [Google Sheets](#google_sheets)
+
+6. [Testing](#testing)
+   - Requirements for PEP8
+   - Validation Testing
+
+7. [Browser Capability](#browser_capability)
+
+8. [Creating a Google Spreadsheet and Integrating it using API](#creating_a_google_spreadsheet_and_integrating_it_using_api)
+
+9. [Deployment](#deployment)
+   - Github/Heroku
+   - Local Deployment
+   - Heroku Deployment
+   - Manual Testing
+   - Bugs
+
+10. [Credits](#credits)
+   - Content
+   - Code
+   - Media
+   - ReadMe
 
 
 ## User Experience <a name="user_experience"></a> :woman_technologist:
@@ -265,6 +293,7 @@ In the Flexibook application's Google Sheets section, the integration between Py
 - The charts - I added these charts on my google sheet which will constantly change as the application is used. This is for the owner of the sheet to monitor the most and least popular dates and times.
  <img src="documentation/google-sheets.png" width="500">
 
+
 ## Testing <a name="testing"></a> :abacus:
 
 ### Requirements for PEP8
@@ -291,33 +320,6 @@ The project has been tested for compatibility with the following browsers:
 - Opera (Version 104)
 
 Additionally, testing has been conducted on Safari, specifically on macOS Sonoma 14.3. While the website loads and initiates the program, users may encounter issues with input functionality.
-
-## Deployment <a name="deployment"></a> :printer:
-
-#### Github/Heroku
-
-**Pushing Changes:**
-- `git add .`: This command was used to add all files to the staging area before they are committed with the commit message.
-- `git add run.py`: This command was used to add the run.py file to the staging area before committing. This would work with any individual file you want to update.
-- `git commit -m "commit message"`: This command was used to commit changes to the local repository queue ready for the final step.
-- `git push`: This command was used to update all committed code to the remote repository on GitHub.
-
-#### Deploying a GitHub Repository via GitHub Pages
-
-1. In your Repository section, select the Repository you wish to deploy.
-2. In the top horizontal Menu, locate and click the Settings link.
-3. Inside the Setting page, around halfway down locate the GitHub Pages Section.
-4. Under Source, select the None tab and change it to Main and click Save.
-5. Finally, once the page resets, scroll back down to the GitHub Pages Section to see the following message: "Your site is ready to be published at (Link to the GitHub Page Web Address)". It can take time for the link to open your project initially, so please don't be worried if it does not load immediately.
-
-#### Making a Local Clone
-
-1. Find the GitHub Repository.
-2. Click the Code button.
-3. Copy the link shown.
-4. In Gitpod, change the directory to the location you would like the cloned directory to be located.
-5. Type `git clone`, and paste the link you copied in step 3.
-6. Press Enter to have the local clone created.
 
 ## Creating a Google Spreadsheet and Integrating it using API
 
@@ -375,6 +377,82 @@ Additionally, testing has been conducted on Safari, specifically on macOS Sonoma
    - Create CREDS using the gspread authorise method to access the created worksheet data.
 
 **Note:** Ensure the JSON file is never committed to GitHub as it contains sensitive information. Create a .gitignore file in the workspace and add the name of the JSON file to it.
+
+## Deployment <a name="deployment"></a> :printer:
+
+#### Github/Heroku
+
+**Pushing Changes:**
+- `git add .`: This command was used to add all files to the staging area before they are committed with the commit message.
+- `git add run.py`: This command was used to add the run.py file to the staging area before committing. This would work with any individual file you want to update.
+- `git commit -m "commit message"`: This command was used to commit changes to the local repository queue ready for the final step.
+- `git push`: This command was used to update all committed code to the remote repository on GitHub.
+
+
+## Local Deployment
+
+### Clone GitHub Repository
+
+You can create a local copy of the GitHub repository using one of the following methods:
+
+* **Download ZIP file:**
+    * Go to the GitHub Repo page.
+    * Click the Code button and download the ZIP file containing the project.
+    * Extract the ZIP file to a location on your PC.
+
+* **Clone the repository:**
+    * Open a folder on your computer with the terminal.
+    * Run the following command:
+        ```
+        git clone https://github.com/IuliiaKonovalova/felxibook.git
+        ```
+
+### Install Python Module Dependencies
+
+* Navigate to the folder flexibook by executing the command:
+    ```
+    cd flexibook
+    ```
+* Run the command:
+    ```
+    pip install -r requirements.txt
+    ```
+
+## Heroku Deployment
+
+**Note:** This application has removed its free tier services. Code Institute offered to their students a Heroku Student Pack to be able to deploy our code without the cost.
+
+1. Go to the Heroku dashboard.
+2. Click on the "Create new app" button.
+3. Name the app uniquely (e.g., "love-sandwiches").
+4. Select the appropriate region.
+5. Click on "Create app".
+6. Navigate to the "Settings" tab.
+7. Under "Config Vars", add a new config var with the key "CREDS" and copy the contents of the creds.json file from your workspace into the value field.
+8. Click on "Add".
+9. Add two buildpacks: Python and node.js. Ensure Python is on top.
+10. Navigate to the "Deploy" section.
+11. Choose the deployment method (e.g., Github).
+12. Connect to your Github repository.
+13. Select the repository name.
+14. Click on "Connect".
+15. Choose either automatic deploys or manual deploys.
+16. If manual, select the branch to deploy.
+17. Wait for the deployment process to complete.
+18. Check the deployment logs for any errors.
+19. Test the deployed application to ensure it works correctly.
+20. Verify functionality with both correct and incorrect data inputs.
+
+Project deplyed!
+
+#### Making a Local Clone
+
+1. Find the GitHub Repository.
+2. Click the Code button.
+3. Copy the link shown.
+4. In Gitpod, change the directory to the location you would like the cloned directory to be located.
+5. Type `git clone`, and paste the link you copied in step 3.
+6. Press Enter to have the local clone created.
 
 ### Manual Testing
 
