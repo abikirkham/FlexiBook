@@ -175,18 +175,16 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 
 
 ## Technologies Used <a name="technologies_used"></a> :desktop_computer:
-
-- [HTML5](https://en.wikipedia.org/wiki/HTML5) [/CSS](https://en.wikipedia.org/wiki/CSS)
-- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-- [Git](https://git-scm.com/) (Version Control)
-- [GitHub](https://github.com/) (File Storage)
-- [Heroku](https://www.heroku.com/) (Deployment)
-- [GitPod](https://www.gitpod.io) (IDE)
-- [Miro](https://miro.com/app/board/uXjVNhD3dEI=/) (Flowchart Creation)
-- [LanguageTool](https://languagetool.org/) was used to check the grammar and spelling in the README and the Code.
-- [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Small%20Keyboard&t=Type%20Something%20) (Logo Creation)
-- [Google Spreadsheet](https://docs.google.com/spreadsheets/u/0/?pli=1) (Worksheet Creation)
-- [Browserling](https://www.browserling.com/) (Cross-browser Testing)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - Employed HTML5 to include a unique Favicon, enhancing application appearance.
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - Utilised Python for writing and executing the project's code.
+- [GitHub](https://github.com/) (File Storage) - Stored project code files securely using GitHub's version control system.
+- [Heroku](https://www.heroku.com/) (Deployment) - Deployed the project on Heroku for online presentation and access.
+- [GitPod](https://www.gitpod.io) (IDE) - Wrote and edited code conveniently using GitPod's integrated development environment.
+- [Miro](https://miro.com/app/board/uXjVNhD3dEI=/) (Flowchart Creation) - Created flowcharts on Miro to visualise project workflows and planning.
+- [LanguageTool](https://languagetool.org/) - Checked grammar and spelling across README and code for accuracy.
+- [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Small%20Keyboard&t=Type%20Something%20) (Logo Creation) - Used an ASCII Art Generator to design eye-catching logos for the project.
+- [Google Spreadsheet](https://docs.google.com/spreadsheets/u/0/?pli=1) - Organised project data and information in Google Spreadsheet for easy management and collaboration.
+- [Browserling](https://www.browserling.com/) (Cross-browser Testing) - Conducted thorough testing to ensure the project works seamlessly across different web browsers.
 
 ### Libraries and Modules
 
@@ -451,6 +449,8 @@ By making these adjustments, the code ensures that new_time is properly defined 
 ### Code
 
 - Leveraged the walkthrough project "Love Sandwich" from Code Institute to utilise the gspread library, set APIs, update worksheets, and fetch data.
+- Grateful to Code Institute for the initial guidance and terminal access, enabling smooth code writing.
+- Thanks to Heroku, with support from Code Institute's 'student pack,' for providing a platform to run my application seamlessly.
 - ASCII text art logo sourced from [fsymbols.com](https://fsymbols.com/text-art/)
 - Menu implementation guidance provided by tutor, sourced from [simple-term-menu](https://pypi.org/project/simple-term-menu/)
 - Utilised a random code generator from [Stack Overflow](https://stackoverflow.com/questions/2257441/random-string-generation-with-upper-case-letters-and-digits)
