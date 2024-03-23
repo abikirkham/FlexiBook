@@ -94,8 +94,7 @@ def book_class():
                     {Style.RESET_ALL}
                     """)
                     if confirmation.lower() == 'yes':
-                        confirmation_code = ''.join
-                        (random.choices('0123456789', k=6))
+                        confirmation_code = ''.join(random.choices('0123456789', k=6))
                         print(f"""
                         {Fore.GREEN}
                         YAY, booking confirmed. Confirmation code:
@@ -141,29 +140,32 @@ def edit_booking():
         Booking found. What would you like to edit?\n
         {Style.RESET_ALL}""")
         print(Fore.BLUE + "1. Change date\n2. Change time\n")
-        choice = input("Enter your choice (1/2):\n")
+        
+        # Loop until a valid choice is made
+        while True:
+            choice = input("Enter your choice (1/2):\n")
 
-        new_time = None  # Initialize new_time variable
-
-        if choice == '1':
-            new_day = input(Fore.GREEN + "Enter new day:\n")
-            row_to_edit[1] = new_day
-        elif choice == '2':
-            new_time = input(Fore.GREEN + "Enter new time:\n")
-            row_to_edit[2] = new_time
-        else:
-            print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
-            edit_booking()
-
+            if choice == '1':
+                new_day = input(Fore.GREEN + "Enter new day:\n")
+                row_to_edit[1] = new_day
+                break  # Break out of the loop after updating the day
+            elif choice == '2':
+                new_time = input(Fore.GREEN + "Enter new time:\n")
+                row_to_edit[2] = new_time
+                break  # Break out of the loop after updating the time
+            else:
+                print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
+        
         print("Changes made. Confirm?\n")
         confirmation = input(f"""{Fore.YELLOW}
         Please confirm this is correct (yes/no):\n
         {Style.RESET_ALL}""")
         if confirmation.lower() == 'yes':
             # Update the Google Sheet with the new values
-            if new_time is not None:  # Check if new_time is assigned
+            if choice == '2':
                 CONFIRMATION_SHEET.update('C' + str(index + 2), [[new_time]])
-            CONFIRMATION_SHEET.update('B' + str(index + 2), [[row_to_edit[1]]])
+            elif choice == '1':
+                CONFIRMATION_SHEET.update('B' + str(index + 2), [[row_to_edit[1]]])
             print(Fore.GREEN + "Booking details updated.")
         else:
             print("Changes discarded.")
@@ -173,7 +175,6 @@ def edit_booking():
 
     input(Fore.WHITE + "Press Enter to return to the main menu.\n")
     main()
-
 
 def cancel_booking():
     clear_screen()
