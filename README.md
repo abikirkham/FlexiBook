@@ -16,12 +16,13 @@ This project is a simple web application built with Python. It enables users to 
 2. [Design](#design)
 3. [Features](#features)
 4. [Technologies Used](#technologies_used)
-5. [Google Sheets](#google_sheets)
-6. [Testing](#testing)
-7. [Browser Capability](#browser_capability)
-8. [Creating a Google Spreadsheet and Integrating it using API](#creating_a_google_spreadsheet_and_integrating_it_using_api)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
+5. [Creating a Google Spreadsheet and Integrating it using API](#creating_a_google_spreadsheet_and_integrating_it_using_api)
+6. [Google Sheets](#google_sheets)
+7. [Deployment](#deployment)
+8. [Browser Capability](#browser_capability)
+9. [Testing](#testing)
+10. [Bugs](#bugs)
+11. [Credits](#credits)
 
 ## User Experience <a name="user_experience"></a> :woman_technologist:
 
@@ -189,6 +190,65 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 - [`colorama`](https://pypi.org/project/colorama/) (Text Coloring in Terminal)
 - [`simple_menu`](https://pypi.org/project/simple-term-menu/) (Menu Functionality)
 
+
+## Creating a Google Spreadsheet and Integrating it using API
+
+### Creating the Google Spreadsheet:
+
+1. **Log in** (or sign up) to your Google Account.
+2. **Access Google Spreadsheet:** Navigate to Google Sheets.
+3. **Create a new spreadsheet** and give it a descriptive name, e.g., 'life-in-numbers' like the name of the application.
+4. **Rename the worksheet** (e.g., 'user') and add, if necessary, additional worksheets.
+5. **Add headings** (Name, Birth year, Gender (m/f), Height in m, Weight in kg, Age).
+
+### Setting up the APIs:
+
+1. **Navigate to the Google Cloud Platform:**
+   - Create a new project by clicking the button "Select a project" and then selecting "New project."
+   - Give the project a descriptive and meaningful name, e.g., life-in-numbers, and click on the "CREATE" button.
+   - In the Notifications pop-up, click on "SELECT PROJECT."
+   
+2. **On the project page:**
+   - Go to the menu (click the burger icon in the top-left corner of the page), click on "APIs and services," and then select "Library."
+   - In the search bar, search for "Google Drive" and enable it.
+   - Click on "Credentials" in the sidebar and then select "+ CREATE CREDENTIALS > Help me choose."
+   
+3. **Credential setup:**
+   - Select "Google Drive API" and "Application Data" in the Credential Type section and click on the "NEXT" button.
+   - Enter a custom service name and click the "CREATE AND CONTINUE" button.
+   - Select "Editor" as the role in the Quick access section Basic and press the "CONTINUE" button.
+   - Leave the form fields in the next question blank and click on "DONE."
+   - Click on the email from the newly created Service Account.
+   - Click on the Tab "KEYS" and then select "Create new key" from the dropdown menu of the "ADD KEY" button.
+   - Keep the key type as JSON and click the "CREATE" button. Download the JSON file to your local machine.
+
+4. **Enable Google Sheets API:**
+   - Go back to the library again, search for "Google Sheets API," and enable it.
+
+5. **Drag and drop credential-json file:**
+   - Drag and drop the credential JSON file (downloaded after step 3) into the workspace and rename it as "creds.json" for simplicity.
+
+6. **Sharing the Spreadsheet:**
+   - Open the JSON file in the workspace, copy the client email (without the quotes).
+   - Go to the created Google Spreadsheet, click the "Share" button.
+   - Paste in the email address (from step 6), select "Editor," and then click "Share."
+
+### Connecting the APIs to Python:
+
+1. **Install dependencies:**
+   - In the workspace terminal, run the command 'pip3 install gspread google-auth'.
+   
+2. **Import libraries:**
+   - Import the gspread library at the top of the Python file in the workspace.
+   - Import the Credentials from the Google Auth Account (google.oauth2.service_account).
+   
+3. **Set SCOPE and create CREDS:**
+   - Set the SCOPE, listing the APIs the program needs to access to run.
+   - Create CREDS using the gspread authorise method to access the created worksheet data.
+
+**Note:** Ensure the JSON file is never committed to GitHub as it contains sensitive information. Create a .gitignore file in the workspace and add the name of the JSON file to it.
+
+
 ## Google Sheets <a name="google_sheets"></a>
 In the Flexibook application's Google Sheets section, the integration between Python code and Google Sheets facilitates seamless monitoring of yoga class bookings. The Google Sheets section serves as a centralised hub for tracking class reservations, displaying essential details such as confirmation code, day, time, and participant's name. This integration allows for efficient management of bookings, with options to book, edit, or cancel classes directly from the sheet. When booking a class, users input their details via the Python code, which updates the corresponding sheet fields. The edit functionality recognises confirmation codes to modify class dates or times, ensuring accurate scheduling. Additionally, the cancel option identifies confirmation codes and removes corresponding bookings upon confirmation, providing flexibility and ease of use for both users and yoga instructors. Below are the pieces of code I used to implement this:
 
@@ -262,22 +322,6 @@ In the Flexibook application's Google Sheets section, the integration between Py
  <img src="documentation/google-sheets.png" width="500">
 
 
-## Testing <a name="testing"></a> :abacus:
-
-### Requirements for PEP8
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line. This was indetified in the [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#) , which told you if you needed to shorten your lines when they were too long. 
-
- ### Validation Testing
-   - [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#)
-     - Upon running the Python Linter for `run.py`, initial findings revealed warnings regarding trailing whitespace and errors due to line length exceeding standards. After rectifying these issues, subsequent runs reported no errors. See image below for details.
-
-<img src="documentation/cipython-linter.png" width="700">
-    
-   - [HTML Validator](https://validator.w3.org/)
-     - Evaluation of `layout.html` was conducted using the W3C HTML Validator. Notably, after incorporating a favicon, meta description and a  title within `layout.html`, the Nu HTML Checker was employed for verification. Refer to the image for more information.
-
-<img src="documentation/html.png" width="700">
-
 ## Browser Capability <a name="browser_capability"></a> :computer:
 
 The project has been tested for compatibility with the following browsers:
@@ -289,62 +333,6 @@ The project has been tested for compatibility with the following browsers:
 
 Additionally, testing has been conducted on Safari, specifically on macOS Sonoma 14.3. While the website loads and initiates the program, users may encounter issues with input functionality.
 
-## Creating a Google Spreadsheet and Integrating it using API
-
-### Creating the Google Spreadsheet:
-
-1. **Log in** (or sign up) to your Google Account.
-2. **Access Google Spreadsheet:** Navigate to Google Sheets.
-3. **Create a new spreadsheet** and give it a descriptive name, e.g., 'life-in-numbers' like the name of the application.
-4. **Rename the worksheet** (e.g., 'user') and add, if necessary, additional worksheets.
-5. **Add headings** (Name, Birth year, Gender (m/f), Height in m, Weight in kg, Age).
-
-### Setting up the APIs:
-
-1. **Navigate to the Google Cloud Platform:**
-   - Create a new project by clicking the button "Select a project" and then selecting "New project."
-   - Give the project a descriptive and meaningful name, e.g., life-in-numbers, and click on the "CREATE" button.
-   - In the Notifications pop-up, click on "SELECT PROJECT."
-   
-2. **On the project page:**
-   - Go to the menu (click the burger icon in the top-left corner of the page), click on "APIs and services," and then select "Library."
-   - In the search bar, search for "Google Drive" and enable it.
-   - Click on "Credentials" in the sidebar and then select "+ CREATE CREDENTIALS > Help me choose."
-   
-3. **Credential setup:**
-   - Select "Google Drive API" and "Application Data" in the Credential Type section and click on the "NEXT" button.
-   - Enter a custom service name and click the "CREATE AND CONTINUE" button.
-   - Select "Editor" as the role in the Quick access section Basic and press the "CONTINUE" button.
-   - Leave the form fields in the next question blank and click on "DONE."
-   - Click on the email from the newly created Service Account.
-   - Click on the Tab "KEYS" and then select "Create new key" from the dropdown menu of the "ADD KEY" button.
-   - Keep the key type as JSON and click the "CREATE" button. Download the JSON file to your local machine.
-
-4. **Enable Google Sheets API:**
-   - Go back to the library again, search for "Google Sheets API," and enable it.
-
-5. **Drag and drop credential-json file:**
-   - Drag and drop the credential JSON file (downloaded after step 3) into the workspace and rename it as "creds.json" for simplicity.
-
-6. **Sharing the Spreadsheet:**
-   - Open the JSON file in the workspace, copy the client email (without the quotes).
-   - Go to the created Google Spreadsheet, click the "Share" button.
-   - Paste in the email address (from step 6), select "Editor," and then click "Share."
-
-### Connecting the APIs to Python:
-
-1. **Install dependencies:**
-   - In the workspace terminal, run the command 'pip3 install gspread google-auth'.
-   
-2. **Import libraries:**
-   - Import the gspread library at the top of the Python file in the workspace.
-   - Import the Credentials from the Google Auth Account (google.oauth2.service_account).
-   
-3. **Set SCOPE and create CREDS:**
-   - Set the SCOPE, listing the APIs the program needs to access to run.
-   - Create CREDS using the gspread authorise method to access the created worksheet data.
-
-**Note:** Ensure the JSON file is never committed to GitHub as it contains sensitive information. Create a .gitignore file in the workspace and add the name of the JSON file to it.
 
 ## Deployment <a name="deployment"></a> :printer:
 
@@ -355,7 +343,6 @@ Additionally, testing has been conducted on Safari, specifically on macOS Sonoma
 - `git add run.py`: This command was used to add the run.py file to the staging area before committing. This would work with any individual file you want to update.
 - `git commit -m "commit message"`: This command was used to commit changes to the local repository queue ready for the final step.
 - `git push`: This command was used to update all committed code to the remote repository on GitHub.
-
 
 ## Local Deployment
 
@@ -421,6 +408,24 @@ Project deplyed!
 4. In Gitpod, change the directory to the location you would like the cloned directory to be located.
 5. Type `git clone`, and paste the link you copied in step 3.
 6. Press Enter to have the local clone created.
+
+
+## Testing <a name="testing"></a> :abacus:
+
+### Requirements for PEP8
+The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line. This was indetified in the [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#) , which told you if you needed to shorten your lines when they were too long. 
+
+ ### Validation Testing
+   - [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#)
+     - Upon running the Python Linter for `run.py`, initial findings revealed warnings regarding trailing whitespace and errors due to line length exceeding standards. After rectifying these issues, subsequent runs reported no errors. See image below for details.
+
+<img src="documentation/cipython-linter.png" width="700">
+    
+   - [HTML Validator](https://validator.w3.org/)
+     - Evaluation of `layout.html` was conducted using the W3C HTML Validator. Notably, after incorporating a favicon, meta description and a  title within `layout.html`, the Nu HTML Checker was employed for verification. Refer to the image for more information.
+
+<img src="documentation/html.png" width="700">
+
 
 ### Manual Testing
 
