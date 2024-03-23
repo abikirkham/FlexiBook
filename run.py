@@ -22,9 +22,16 @@ CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
 def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
     CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
 
+def clear_screen():
+    """
+    Clears the screen from text
+    """
+    print("\033c", end="")
+
 
 def book_class():
     """Function to book a class"""
+    clear_screen()
     print("""
     Welcome to the class booking stage, please follow the instructions below:
     """)
@@ -118,6 +125,8 @@ def book_class():
 
 
 def edit_booking():
+    """Function to edit a class"""
+    clear_screen()
     confirmation_code = input(Fore.BLUE + """
     Please type your class confirmation code:\n
     """)
@@ -167,6 +176,8 @@ def edit_booking():
 
 
 def cancel_booking():
+    clear_screen()
+    """Function to cancel a class"""
     confirmation_code = input("Please type your confirmation code:\n")
     all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
     all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
@@ -213,9 +224,9 @@ def welcome_message():
 def main_menu():
 
     options = [
-             "[b] Book a class",
-             "[e] Edit your booking",
-             "[c] Cancel your booking"]
+            "[b] Book a class",
+            "[e] Edit your booking",
+            "[c] Cancel your booking"]
     terminal_menu = TerminalMenu(options, title=Fore.GREEN + """
     Select your action""" + Style.RESET_ALL)
     menu_entry_index = terminal_menu.show()
