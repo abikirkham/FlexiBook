@@ -147,7 +147,7 @@ The flowchary was crafted when I was decisiding how I would structure and displa
    
    - **Error Handling**:
      - If you do not select the correct option, you will receive an error message.  
-       ![Edit Error](documentation/errror-edit-1:2.png)
+       ![Edit Error](documentation/errror-edit-1-2.png)
      - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.  
        ![Wrong Code](documentation/wrong-code.png)
    
