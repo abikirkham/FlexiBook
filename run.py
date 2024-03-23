@@ -24,9 +24,7 @@ def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
 
 
 def clear_screen():
-    """
-    Clears the screen from text
-    """
+    """ Clears the screen from users inputs """
     print("\033c", end="")
 
 
@@ -156,7 +154,9 @@ def edit_booking():
                 row_to_edit[2] = new_time
                 break  # Break out of the loop after updating the time
             else:
-                print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
+                print(Fore.RED + """
+                Invalid choice. Please enter either 1 or 2.
+                """ + Fore.RESET)
 
         print("Changes made. Confirm?\n")
         confirmation = input(f"""{Fore.YELLOW}
@@ -182,8 +182,8 @@ def edit_booking():
 
 
 def cancel_booking():
-    clear_screen()
     """Function to cancel a class"""
+    clear_screen()
     confirmation_code = input("Please type your confirmation code:\n")
     all_confirmation_codes = CONFIRMATION_SHEET.col_values(1)[1:]
     all_rows = CONFIRMATION_SHEET.get_all_values()[1:]
@@ -229,6 +229,7 @@ def welcome_message():
 
 
 def main_menu():
+    """ Function for main menu """
 
     options = [
             "[b] Book a class",
@@ -256,6 +257,7 @@ def main_menu():
 
 
 def main():
+    """ Function to show welcome message and main menu """
     welcome_message()
     main_menu()
 
