@@ -13,46 +13,15 @@ This project is a simple web application built with Python. It enables users to 
 ## Table of Contents
 
 1. [User Experience](#user_experience)
-   - For the Owner
-   - For the User
-
 2. [Design](#design)
-   - Imagery
-   - Colours
-   - Flow Chart
-
 3. [Features](#features)
-   - Run Programme - Logo/Welcome Message
-   - Navigate the Menu
-   - Book a Class
-   - Edit Your Booking
-   - Cancel Your Booking
-
 4. [Technologies Used](#technologies_used)
-
 5. [Google Sheets](#google_sheets)
-
 6. [Testing](#testing)
-   - Requirements for PEP8
-   - Validation Testing
-
 7. [Browser Capability](#browser_capability)
-
 8. [Creating a Google Spreadsheet and Integrating it using API](#creating_a_google_spreadsheet_and_integrating_it_using_api)
-
 9. [Deployment](#deployment)
-   - Github/Heroku
-   - Local Deployment
-   - Heroku Deployment
-   - Manual Testing
-   - Bugs
-
 10. [Credits](#credits)
-   - Content
-   - Code
-   - Media
-   - ReadMe
-
 
 ## User Experience <a name="user_experience"></a> :woman_technologist:
 
@@ -77,7 +46,6 @@ This project is a simple web application built with Python. It enables users to 
 4. **Easy Editing/Cancellation:** As a user, I want the ability to effortlessly edit or cancel my class bookings, ensuring flexibility in managing my schedule without encountering unnecessary obstacles.
 
 5. **Distraction-Free Experience:** As a user, I want the booking platform to provide a distraction-free experience, with minimal ads or irrelevant content, allowing me to focus solely on finding and booking the classes that align with my needs and preferences.
-
 
 
 ## Design <a name="design"></a> :art:
