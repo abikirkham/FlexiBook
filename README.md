@@ -7,7 +7,7 @@ This project is a simple web application built with Python. It enables users to 
 
 [**Repository link**](https://github.com/abikirkham/FlexiBook.git)
 
- <img src="readme/mock-up.png" width="700">
+ <img src="documentation/mock-up.png" width="700">
 
 
  
@@ -58,21 +58,21 @@ This project is a simple web application built with Python. It enables users to 
 The Flexibook logo, sourced from [F-Symbols](fsymbols.com), embodies adaptability and versatility through its design. The simplicity of the logo's typography belies its dynamic nature, mirroring the flexibility at the core of Flexibook's services. The use of text art adds a contemporary flair, emphasizing the brand's innovative approach. This logo promises a seamless and user-friendly experience, reflecting the convenience that Flexibook offers to its users.
 <details>
   <summary>Click to see my Logo.</summary>
-<img src="readme/logo.png" width="500"> 
+<img src="documentation/logo.png" width="500"> 
 </details>
 
 ### Colours
 The color scheme drawn from Colorama, found on [PyPi](pypi.org), infuses Flexibook's branding with vibrancy and energy. Each color selected from Colorama contributes to the visual appeal and functionality of Flexibook's interface. The primary colors inject excitement and enthusiasm, encouraging user engagement, while the secondary colors provide balance and contrast for enhanced readability. Overall, the Colorama color scheme enhances Flexibook's branding, making it both visually appealing and user-friendly.
 <details>
   <summary>Click to see my Color Tool.</summary>
-<img src="readme/color-scheme.png" width="500">
+<img src="documentation/color-scheme.png" width="500">
 </details>
 
 ### Flow Chart
 The flowchary was crafted when I was decisiding how I would structure and display my idea, this was created with [Miro](https://miro.com/app/board/uXjVNhD3dEI=/). This displays the option of the class booking sytem where the user will input their actions and generate a confirmation code once booked a class. The other options are for editting and cancelling the booked classes.
 <details>
   <summary>Click to see my flowchart.</summary>
-  <img src="readme/flowchart.png" width="700">
+  <img src="documentation/flowchart.png" width="700">
 </details>
 
 
@@ -82,8 +82,8 @@ The flowchary was crafted when I was decisiding how I would structure and displa
    <details>
    <summary>Click to Expand.</summary>
    
-   ![Logo](readme/logo.png)
-   ![Welcome Message](readme/welcome-message.png)
+   ![Logo](documentation/logo.png)
+   ![Welcome Message](documentation/welcome-message.png)
    
    </details>
 
@@ -94,7 +94,7 @@ The flowchary was crafted when I was decisiding how I would structure and displa
    Upon running the program, you will be presented with a menu where you can choose to book a class, edit your booking, or cancel your booking.
    
    Functionality:  
-   ![Menu](readme/menu.png)
+   ![Menu](documentation/menu.png)
    
    </details>
 
@@ -106,23 +106,23 @@ The flowchary was crafted when I was decisiding how I would structure and displa
    
    - **Instructions**:
      - When prompted, enter the day of the week you wish to book (e.g., Monday).  
-       ![Book Days](readme/book:days.png)
+       ![Book Days](documentation/book-days.png)
      - Then, choose a time slot from the available options.  
-       ![Book Time](readme/book:time.png)
+       ![Book Time](documentation/book-time.png)
      - Enter your name as requested.  
-       ![Book Name](readme/book:name.png)
+       ![Book Name](documentation/book-name.png)
      - Confirm the booking details when prompted. If correct, your booking will be confirmed with a unique confirmation code.  
-       ![Booking Confirmation](readme/book:confirm.png)  
-       ![Confirmation Code](readme/confirm-code.png)  
+       ![Booking Confirmation](documentation/book-confirm.png)  
+       ![Confirmation Code](documentation/confirm-code.png)  
      - After completing an action, you will be prompted to press Enter to return to the main menu.  
-       ![Enter to Menu](readme/enter-to-menu.png)
+       ![Enter to Menu](documentation/enter-to-menu.png)
        
    - **Error Handling**:
      - If you say no when confirming the details of the booking.  
-       ![No Confirmation Error](readme/no-confirm-worng.png)
+       ![No Confirmation Error](documentation/no-confirm-worng.png)
      - If you input an invalid day or time, you will receive a notification to try again.  
-       ![Day of Week Error](readme/error-day-of-the-week.png)  
-       ![Time of Day Error](readme/error-time-of-the-day.png)
+       ![Day of Week Error](documentation/error-day-of-the-week.png)  
+       ![Time of Day Error](documentation/error-time-of-the-day.png)
    
    </details>
 
@@ -134,22 +134,22 @@ The flowchary was crafted when I was decisiding how I would structure and displa
    
    - **Instructions**:
      - Enter your confirmation code when prompted.  
-       ![Edit Confirmation Code](readme/edit:confirm-code.png)
+       ![Edit Confirmation Code](documentation/edit-confirm-code.png)
      - Select the aspect of your booking you wish to edit (date or time).  
-       ![Edit Date/Time](readme/date:time.png)
+       ![Edit Date/Time](documentation/date-time.png)
      - Follow the prompts to make the necessary changes.  
-       ![New Day](readme/new-day.png)  
-       ![New Time](readme/new-time.png)
+       ![New Day](documentation/new-day.png)  
+       ![New Time](documentation/new-time.png)
      - Confirm the changes to update your booking.  
-       ![Edit Confirmation](readme/edit-f-confirm.png)  
+       ![Edit Confirmation](documentation/edit-f-confirm.png)  
      - After completing an action, you will be prompted to press Enter to return to the main menu.  
-       ![Enter to Menu](readme/enter-to-menu.png)
+       ![Enter to Menu](documentation/enter-to-menu.png)
    
    - **Error Handling**:
      - If you do not select the correct option, you will receive an error message.  
-       ![Edit Error](readme/errror:edit-1:2.png)
+       ![Edit Error](documentation/errror-edit-1:2.png)
      - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.  
-       ![Wrong Code](readme/wrong-code.png)
+       ![Wrong Code](documentation/wrong-code.png)
    
    </details>
 
@@ -161,15 +161,15 @@ The flowchary was crafted when I was decisiding how I would structure and displa
    
    - **Instructions**:
      - Enter your confirmation code when prompted.  
-       ![Cancel Confirmation Code](readme/cancel:confirm-code.png)
+       ![Cancel Confirmation Code](documentation/cancel-confirm-code.png)
      - Confirm the cancellation when prompted.  
-       ![Cancel Yes/No](readme/cancel-y:n.png)
+       ![Cancel Yes/No](documentation/cancel-y-n.png)
      - After completing an action, you will be prompted to press Enter to return to the main menu.  
-       ![Enter to Menu](readme/enter-to-menu.png)
+       ![Enter to Menu](documentation/enter-to-menu.png)
    
    - **Error Handling**:
      - If you input an invalid confirmation code or choose an incorrect option, you will be prompted to try again.  
-       ![Wrong Code](readme/wrong-code.png)
+       ![Wrong Code](documentation/wrong-code.png)
    
    </details>
 
@@ -265,7 +265,7 @@ In the Flexibook application's Google Sheets section, the integration between Py
 
    
 - The charts - I added these charts on my google sheet which will constantly change as the application is used. This is for the owner of the sheet to monitor the most and least popular dates and times.
- <img src="readme/google-sheets.png" width="500">
+ <img src="documentation/google-sheets.png" width="500">
 
 ## Testing <a name="testing"></a> :abacus:
 
@@ -276,12 +276,12 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
    - [Continuous Integration Python Linter](https://pep8ci.herokuapp.com/#)
      - Upon running the Python Linter for `run.py`, initial findings revealed warnings regarding trailing whitespace and errors due to line length exceeding standards. After rectifying these issues, subsequent runs reported no errors. See image below for details.
 
-<img src="readme/CIPL.png" width="700">
+<img src="documentation/cipython-linter.png" width="700">
     
    - [HTML Validator](https://validator.w3.org/)
      - Evaluation of `layout.html` was conducted using the W3C HTML Validator. Notably, after incorporating a favicon, meta description and a  title within `layout.html`, the Nu HTML Checker was employed for verification. Refer to the image for more information.
 
-<img src="readme/html.png" width="700">
+<img src="documentation/html.png" width="700">
 
 ## Browser Capability <a name="browser_capability"></a> :computer:
 
