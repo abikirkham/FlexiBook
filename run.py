@@ -5,7 +5,7 @@ from simple_term_menu import TerminalMenu
 import colorama
 from colorama import Fore, Back, Style
 
-
+# Google Sheets API scope and credentials
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -19,6 +19,7 @@ SHEET = GSPREAD_CLIENT.open('FlexiBook')
 CONFIRMATION_SHEET = SHEET.worksheet('confirmation')
 
 
+# Function to write booking details to the confirmation sheet
 def write_to_confirmation_sheet(confirmation_code, day, chosen_time, name):
     CONFIRMATION_SHEET.append_row([confirmation_code, day, chosen_time, name])
 
@@ -58,6 +59,7 @@ def book_class():
         {Style.RESET_ALL}
     """)
 
+# Loop until valid day and time are chosen
     while True:
         day = input("Please choose a day of the week you want to book:\n")
 
