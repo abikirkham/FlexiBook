@@ -93,8 +93,9 @@ def book_class():
                     {Style.RESET_ALL}
                     """)
                     if confirmation.lower() == 'yes':
-                        confirmation_code = ''.join
-                        (random.choices('0123456789', k=6))
+                        confirmation_code = ''.join(
+                            random.choices('0123456789', k=6)
+                            )
                         print(f"""
                         {Fore.GREEN}
                         YAY, booking confirmed. Confirmation code:
