@@ -201,7 +201,7 @@ def cancel_booking():
         Enter 'yes' to confirm cancellation, or 'no' to keep the booking:\n
         {Style.RESET_ALL}""")
         if choice.lower() == 'yes':
-            CONFIRMATION_SHEET.delete_row(index + 2)
+            CONFIRMATION_SHEET.delete_rows(index + 2)
             print("Booking canceled.")
         elif choice.lower() == 'no':
             print(Fore.RED + "You remain on our class booking system.")
