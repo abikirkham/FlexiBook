@@ -197,7 +197,7 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 
 1. **Log in** (or sign up) to your Google Account.
 2. **Access Google Spreadsheet:** Navigate to Google Sheets.
-3. **Create a new spreadsheet** and give it a descriptive name, e.g., 'life-in-numbers' like the name of the application.
+3. **Create a new spreadsheet** and give it a descriptive name, e.g., 'flexibook' like the name of the application.
 4. **Rename the worksheet** (e.g., 'user') and add, if necessary, additional worksheets.
 5. **Add headings** (Name, Birth year, Gender (m/f), Height in m, Weight in kg, Age).
 
