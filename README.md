@@ -198,14 +198,14 @@ The flowchary was crafted when I was decisiding how I would structure and displa
 1. **Log in** (or sign up) to your Google Account.
 2. **Access Google Spreadsheet:** Navigate to Google Sheets.
 3. **Create a new spreadsheet** and give it a descriptive name, e.g., 'flexibook' like the name of the application.
-4. **Rename the worksheet** (e.g., 'user') and add, if necessary, additional worksheets.
-5. **Add headings** (Name, Birth year, Gender (m/f), Height in m, Weight in kg, Age).
+4. **Rename the worksheet** (e.g., 'confirmation') and add, if necessary, additional worksheets.
+5. **Add headings** (Confirmation code, day, time and name).
 
 ### Setting up the APIs:
 
 1. **Navigate to the Google Cloud Platform:**
    - Create a new project by clicking the button "Select a project" and then selecting "New project."
-   - Give the project a descriptive and meaningful name, e.g., life-in-numbers, and click on the "CREATE" button.
+   - Give the project a descriptive and meaningful name, e.g., flexibook, and click on the "CREATE" button.
    - In the Notifications pop-up, click on "SELECT PROJECT."
    
 2. **On the project page:**
